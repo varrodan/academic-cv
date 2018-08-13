@@ -24,7 +24,7 @@ uses the xetex typesetting system.]
 % Fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
-\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
 
 % Custom Document Formatting
 \newcommand\decorativeline[1][1pt]{%
