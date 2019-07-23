@@ -1,0 +1,267 @@
+\documentclass[a4paper,11pt]{article}
+%\documentclass[a4paper,12pt]{article}
+%\usepackage[backend=biber,sorting=ydnt,maxnames=18,giveninits=true,labelnumber=true,defernumbers=true]{biblatex}
+%\usepackage[backend=biber,sorting=ydnt,maxnames=18,giveninits=true]{biblatex}
+%\usepackage[bibstyle=publist]{biblatex}
+\usepackage{xstring}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{12pt plus 1pt minus 0.5pt}{6pt plus 0.5pt}
+%\titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+\titlespacing*{\paragraph}
+{0pt}{3pt plus 1pt minus 0.5pt}{3pt plus 2pt minus 0.5pt}
+
+\usepackage{enumitem}
+\setlist{nosep}
+
+\usepackage{tcolorbox}
+
+\usepackage{fontspec}
+\setmainfont{Cambria}
+\setsansfont{Calibri}
+
+%\setlength{\itemsep}{0pt plus 1pt}
+%\setlength{\itemsep}{0pt}
+%\setlength{\topsep}{0pt}
+\setlength{\parskip}{3pt plus 0.5pt minus 0.5pt}
+%\setlength{\beforeskip}{3pt}
+
+
+%\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.85]{geometry}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+%\assignrefcontextkeyws[labelprefix=C]{C}
+%\assignrefcontextkeyws[labelprefix=J]{J}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}\lhead{Teaching Statement} \rhead{May 2019}
+\chead{{\bf Dániel Varró}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+
+%\title{Teaching Portfolio}
+%\author{D\'aniel Varr\'o}
+%\date{August 2019}
+
+\begin{document}
+%\maketitle
+\setcounter{page}{17}
+
+\vspace{12pt}
+
+%\section{Summary of Excellence}
+\begin{tcolorbox}[title=Summary of Teaching Philosophy]
+As a \emph{course instructor}, a main philosophy of mine is that a software engineering related course should \emph{simultaneously teach foundational concepts and cutting edge software technology}. Without the former, a course becomes empty - without the latter, a course becomes irrelevant. I am dedicated to bring \emph{realistic engineering challenges} frequently with real customers to a course that \emph{facilitate collaboration} within and between student teams while they acquire the new concepts and technologies. I regularly use various  means of \emph{active learning} to make my lectures lively. Furthermore, I always wish to maintain an \emph{inclusive atmosphere} even for a \emph{diverse and international audience}. 
+\vspace{3pt}
+
+As a \emph{supervisor} who actively collaborates with his graduate students with in-depth discussions, my goal is to continuously \emph{strive for excellence} both in engineering tasks as well as in publications while my graduate students are gradually becoming more and more \emph{independent researchers with critical thinking}.  My students typically undertake deep research tasks which go well beyond the state-of-the-art. As a further characteristic, many of our past \emph{results are simultaneously precise and scalable}, and it has been actively \emph{used in an industrial setting}. Active investment in research prototype tools help my students become \emph{excellent software engineers and architects}.
+\end{tcolorbox}
+
+
+%\section{Teaching Responsibilities}
+%Starting as a teaching assistant in 1999, I have been involved in teaching at various levels as a full-time staff member at the Budapest University of Technology and Economics (BME, lecturing dominantly in Hungarian) between 2003 and 2016 and since then at McGill University (Canada, lecturing in English). The list of all courses I taught are listed in my CV (page \ref{xxx}).
+
+
+\section{Course Development at McGill}
+Since 2016, I taught three different courses at McGill University. For the undergraduate courses (ECSE 321: taught three times; and ECSE 429: taught once), I successfully integrated various cutting-edge software technologies to the courses. As a major success, several students reported in privately that they succeeded in getting summer industrial internships based solely on course material. The graduate course (offered under a temporal course identifier ECSE 688) teaches concepts of systems engineering. Since I only offered ECSE 321 more than once before submitting my tenure dossier, my primary focus will be on that course where the impact of my course development activities have been most apparent. 
+
+\subsection{ECSE 321: Introduction to Software Engineering (Undergraduate)}
+I took over this undergraduate course from Prof. Mussbacher and offered it in alternation with Prof. McIntosh who modernized many concepts covered in the course. The course covers the entire lifecycle of a modern software project including requirements engineering, domain modeling, test-driven development, continuous integration and software configuration management in the context of a group project and individual assignments. The 75-100 students of the course must have taken 1-2 previous programming courses prior to enrolling to this course. Below I highlight major developments of the course where my own initiative was predominant to improve the industrial relevance of the course, which received very positive feedback from McGill undergraduates. 
+% and (2) to limit grading efforts with increasing enrollment. 
+
+\paragraph{Modernization of software technologies and team project}
+It was apparent from student feedback I received in the Winter 2017 edition of the course that the software technologies are outdated, and the students do not feel they learn modern material despite the modern concepts. Moreover, students had to develop a smaller system to three different platforms, thus they were not imposed to face integration problems which are characteristic to most modern software.
+
+Therefore, since Winter 2018, I took the initiative and modernized the entire underlying software stack used within the course including the following specific major improvements:
+\begin{enumerate}
+\item The team project should \emph{develop an integrated multi-layer web application} with separate backend (i.e. services and database) and different graphical user interface frontends (mobile, web). 
+\item I changed the Java-dominated technological stack to include \emph{heterogeneous technologies} including a modern web technologies (like HTML5, JavaScript or Vue.js), a modern backend technology (JavaSpring, RESTful API), and Gradle for build automation. I also included respective programming concepts such as asynchronous method calls or promises. 
+\item I introduced a proper underlying relational database technology on top of an object persistence layer using the standard Java Persistence API. I developed respective lecture material to cover the basic concepts of relational databases (as students take the Database course later) and the standard \emph{object-relational mapping}.  
+\item While Montreal is a major aerospace hub, the existing courses of the software engineering curriculum failed to offer specific insights in engineering critical systems. Therefore, I developed lectures on \emph{platform-based design in systems architecture} as well as the \emph{foundations of fault-tolerant systems}.
+\end{enumerate}
+
+Since the theme of the software engineering team project was different in every year, students could decide if they wish to open their GitHub repositories that stored the source code of their projects after the completion of the course. Many teams opted for an open repository and \emph{students started to use their ECSE 321 project as a reference work during interviews of summer internship}. This is clear indication of the industrial usefulness and practical effectiveness of the course as a result of the changes above. 
+
+\paragraph{Involving real customers in team projects}
+
+To better motivate students, I put extra emphasis on providing real challenges for the complex software engineering project carried out by teams. Therefore, I selected project themes where McGill employees could serve as real customers. Those customers participated in requirements engineering sessions where students could ask questions to clarify the scope of the project. Moreover, these customers also attended (and graded) the final student presentations and the final software artifact.
+\begin{itemize}
+\item In Winter 2018, student teams had to develop a software application to manage and supervise the trees in Montreal and calculate various forecasts for evaluating sustainability attributes. Many details of the project were proposed by Prof. Andrew Gonzalez, Prof. Kevin Manaugh and Prof. David Wachsmuth who offered their continuous involvement.
+\item In Winter 2019, student teams had to develop an application to help manage co-op programs (i.e. curricula with compulsory industrial internship) at McGill University. In this case, Ms. Lorraine Donald (Industrial Liason Associate and future administrative coordinator of the upcoming software engineering co-op program) offered continuous help during the project. Moreover, final presentations of student teams were also attended by various employees at the Faculty of Engineering.
+\end{itemize}
+
+
+\paragraph{Redevelopment of tutorials: contents and technology}
+As a consequence of the above initiative, the \emph{sample project as well as the technical contents of the tutorials of the course had to be redeveloped from scratch} which I carried out together with Márton Búr, my PhD student (with further initial help from my graduate students at BME, Gábor Szárnyas and Oszkár Semeráth). This was a major investment since the total length of the PDF version of the material was 75-100 pages. 
+
+To improve the maintainability of tutorial materials, I promoted to host those tutorial materials on GitHub and continuously compile changes into a new version of the document available both in HTML and PDF formats (see e.g. 
+\href{https://mcgill-ecse321-winter2019.github.io/EventRegistration-Tutorials/}{ECSE321-W2019}, 
+\href{https://mcgill-ecse321-winter2018.github.io/EventRegistration-Tutorials/}{ECSE321-W2018}, 
+\href{https://ecse321-winter2017-mcgill.github.io/EventRegistration-Tutorials/}{ECSE321-W2017}). As such, even the tutorials of the course actually used the same software technologies (Gradle, Github, TravisCI) taught by the course. 
+
+
+
+\paragraph{Auto-grader for individual software technology assignment}
+To assure that all students taking the course successfully learned not only the core concepts but also the key software technologies, a programming assignment has already been an integral part of the course where students had to develop a small-scale web application using the same technologies as in the large-scale group project. This assignment had to be carried out by the students either in pairs (in 2017 and 2018) or individually (in 2019). 
+
+However, the evaluation of these individual assignments has been very laborious and somewhat subjective and error-prone. Therefore, I took the initiative to develop an auto-grader framework that could automatically evaluate student submissions by running predefined test cases. The key concepts of the auto-grader framework are the following:
+
+\begin{itemize}
+\item Each student needs to develop a unique combination of software features by extending a baseline web application made available to them as a starting point. All development needs to be done in an individual (private) GitHub repository of the student (identified by their McGill IDs). The individual specification of the assignment is also generated automatically for each student. 
+\item The auto-grader evaluates student submission by running a dedicated test suite. The Instructors need to develop the superset of all test cases from which the auto-grader selects the ones required for the features addressed by the specific student. 
+\item The 80\% of the test cases are made publicly available to students so that they can use them as a reference while developing their solution. The remaining 20\% of the test cases were only included in the official grading process. 
+\item The actual grading is carried out as part of a continuous integration process, which automatically builds the student project, then executes the relevant set of test cases, and finally reports the evaluation in a separate GitHub branch.
+\end{itemize}
+
+The auto-grader has been successfully used in Winter 2019, but several colleagues at my department has expressed there interest in potetially adapting the framework to their course. 
+
+\paragraph{Undergraduate students as project mentors}
+With the help of the Tomlinson Engagement Award for Mentoring (TEAM), I systematically involved excellent undergraduate students in the next edition of the ECSE 321 course. A total of six TEAM mentors (in 2018 and 2019) successfully helped team projects to overcome the difficulties of integrating various software technologies. Moreover, they also helped develop the auto-grader framework. While the TEAM award is on a nomination basis, several undergraduates have indicated to volunteer for the next year, which clearly demonstrates the positive impact of this change.
+
+
+\subsection{ECSE 429: Software Validation (Undergraduate)}
+
+I gave this undergraduate course in Fall 2018 for over 120 students - most of who were taking this course just before their graduation. The course covers various techniques of software quality assurance including testing, static analysis and formal verification. The students of the course need to complete a complex software testing project (in teams) as well as individual testing assignments and three quizzes.
+
+Since the lecture material of the course has been recently redeveloped (by Prof. Mussbacher), I built upon and reused significant amount of existing course material. Since the software technologies used within the course were outdated, my primary goal was to increase the practical and industrial impact of the course by the following initiatives:
+
+\begin{enumerate}
+\item The \emph{tutorials of the course have been redesigned almost from scratch} (with contributions from the two teaching assistants, Márton Búr and Mathieu Boucher). New material included the introduction of code reviews, continuous integration, modern static analysis tools (SonarQube, Infer), automated test case generators (EvoSuite), various frameworks for integration testing as well as end-to-end testing Android applications, model-based testing tools. I adapted the use of GitHub for hosting the \href{https://mcgill-ecse429-fall2018.github.io/Tutorial-Lecture-Notes/}{material of the tutorials}, which allows that corrections can be immediately published to the live material (without extra manual document upload). 
+
+\item As being of utmost importance in modern software quality assurance, I \emph{developed course material related to code reviews and and static analysis techniques} as part of the lectures and introduced an extra deliverable for the team project. To further increase practical relevance, the introductory materials of software quality assurance and testing has been aligned with contents and recommendations of the International Software Testing Qualifications Board (ISTQB) for foundation level certification.
+
+\item Within the complex team project of the course, \emph{student teams had to test a real open source Android application} (Blokish game). Although the suitability of this very project was criticized by students, they were simultaneously enforced to understand and handle the imperfections of real software projects, which is frequently the case in real software projects. 
+
+\item To avoid the laborious work of grading the three individual quizzes with an increased number of enrolled students, I \emph{changed the former closed-book in-class quizzes into an open-book, online quizzes} evaluated semi-automatically using existing support in MyCourses. Students had to complete each quiz in 75 minutes within a 6-hour time-frame, which gave them extra flexibility to avoid clashes of midterm exams with other courses, and in general, it reduced the perceived stress level. 
+\end{enumerate}
+
+\subsection{ECSE xxx/681: Critical Systems (Graduate)}
+
+I proposed and \emph{developed a brand new graduate course on Critical Systems} to provide an overview of main challenges and activities in the design and assurance of critical software-intensive cyber-physical systems (CPSs). The first part of the course is dedicated to the core concepts, languages and techniques of model-based systems engineering used for designing such systems while covering key concepts like safety cases, traceability, viewpoints of system architecture, design space exploration, etc. In this first part, students carry out a complex design project using standard modeling languages (like SysML, Capella) and simulation tools in the context of a cyber-physical system or Internet-of-Things application. This first part is complemented with in-class tutorials and modeling workshops to help students effectively use complex industrial systems engineering tools.
+
+The second part of the course is dedicated to assurance critical CPSs to guarantee the safe behavior of such systems by discussing a wide range of design-time and run-time assurance techniques. In the second part, students familiarize themselves with research results used for the assurance of such systems including various approaches of verification and validation (V\&V). The end of the course is dedicated to recent research challenges for the safety assurance of autonomous systems driven by machine learning and other AI techniques. These research-related contents are close to my own research area, thus student presentations of various research topics normally involve lively and deep discussions. 
+
+I offered the first edition of the course (under a temporary course code) in Winter 2018 for 18 graduate students. As an extra research component for this first edition, students had to assemble a survey presentation of a research topic by categorizing over 15 papers. The official approval of the course is ongoing, and it is expected to be completed in Fall 2019. 
+
+\subsection{Brief summary of past teaching activities at BME}
+
+At \emph{BME}, I was involved in teaching a course on \emph{Formal methods} (with 300+ students each year) since the beginning of the course in 2001 until 2006. Moreover, I was a key contributor and strategic founder of a \emph{curriculum on Systems Engineering}. In a supervisor role, I participated in introducing virtual labs over educational cloud (using Apache VCL) at our faculty for the first time in Hungary which received a \href{https://inf.mit.bme.hu/en/news/2014/02/tempus-stem-call-apache-vcl-based-labs-won-prize}{TEMPUS STEM Award} in 2014. I was major promoter and initiator of an autograding tool used in an undergraduate course with 600+ students where each student could receive an individual technical assignment. 
+
+At BME, I developed a course on \emph{UML-based modeling and analysis} which ran between 2003 and 2009 for 70-80 graduate (MSc) students. \emph{Several teaching assistants of the course were former students} of the course who \emph{voluntarily came back from industry to help the course}, which was a highly unusual way of teaching in Hungary. Between 2009-2016, I ran a course on “Model-driven software/systems development” (twice in English) with 15-20 students each year. I also actively contributed to start the first ever Hungarian university course on \emph{Eclipse based technologies} in 2005. I was also involved in several industrial trainings on these topics. I have been running a PhD seminar on the \emph{Foundations of Model-Driven Engineering} between 2004 and 2014 (with 5-8 students each year). 
+
+
+%\paragraph{Undergraduate-level courses.}
+
+%At \emph{McGill University}, I was the instructor of a course on \emph{Introduction to Software Engineering} for three times with 75-95 students in 2017-2019 and for a very diverse and international audience. In all three editions, I received an average score between 4.2-4.5 (out of 5.0) for all course evaluation questions related to me as instructor, which was significantly over the department average (by an average of 0.6). In 2018, I significantly modernized the technological background of the course – which now teaches modern software engineering principles and architectures in the context of modern software technologies. Despite the heavy workload, the vast majority of students loved the course and gave very positive feedback, such as “\emph{It has been the most interesting and educational course I have taken. So much effort is put in this course from the detailed \href{https://mcgill-ecse321-winter2019.github.io/EventRegistration-Tutorials/}{Hands-On tutorial} document, to the project requirements supported by ‘real’ clients, and finally, the \href{https://flipquiz.com/flashcards/82085/}{interesting games}!}”, “\emph{Professor Varro is by far one of the most helpful, dedicated professors at McGill}”. At McGill, I voluntarily took several trainings offered by Teaching and Learning Services at McGill on how to increase student participation by \emph{active learning} (e.g. frequent online polls during lectures). In Fall 2018, I also taught a course on \emph{Software validation} for over 120 students, but future editions of this course will need significant further modernization.
+
+%\paragraph{Graduate-level courses.}
+%At McGill University, I offer a graduate course on 
+%\emph{model-based engineering for cyber-physical systems} 
+%\emph{critical systems} ()
+%which teaches SysML and related standards in the context of Internet-of-Things and safety-critical CPS.
+
+\subsection{Evidence of Teaching Effectiveness at McGill}
+
+Course evaluations
+
+\begin{table}[htbp]
+\footnotesize
+\begin{tabular}{@{}p{8cm}p{1.3cm}p{1.3cm}p{1.3cm}p{1.3cm}p{1.3cm}@{}}
+\toprule
+\textbf{Question} & \textbf{ECSE321} \newline \textbf{W17} \newline \textbf{(DM)} & 
+\textbf{ECSE321} \newline \textbf{W18} \newline \textbf{(DM)} & 
+\textbf{ECSE321} \newline \textbf{W19} \newline \textbf{(DM)} & 
+\textbf{ECSE429} \newline \textbf{F18} \newline \textbf{(DM)} & 
+\textbf{ECSE681} \newline \textbf{W18} \newline \textbf{(DM)} \\ \toprule
+Response rate (\%) & 44 & 47 & 44 & 34 & 67 \\ \midrule
+\textbf{Q1: Overall, this is an excellent course.} & \textbf{3.8} \newline (3.8) & \textbf{4.5} \newline (3.8) & \textbf{4.4} \newline (3.8) & \textbf{3.6} \newline (3.8) & \textbf{3.9} \newline (3.8)  \\ \midrule
+
+\textbf{Q2: Overall, I learned a great deal from this course.} & \textbf{4.2} \newline (4.0) & \textbf{4.5} \newline (3.9) & \textbf{4.4} \newline (4.0) & \textbf{3.9} \newline (4.0) & \textbf{3.7} \newline (3.9)  \\ \midrule
+
+\textbf{Q3: Overall, this instructor is an excellent teacher.} & \textbf{4.3} \newline (3.7) & \textbf{4.4} \newline (3.7)  & 
+\textbf{4.5} \newline (3.8)  & \textbf{4.0} \newline (3.9) & \textbf{4.6} \newline (3.7)  \\ \midrule
+
+\textbf{Q4: Overall, I learned a great deal from this instructor.} & \textbf{4.2} \newline (3.7) & \textbf{4.3} \newline (3.7)  & 
+\textbf{4.3} \newline (3.8) & \textbf{4.0} \newline (3.9) & \textbf{4.3} \newline (3.7) \\ \midrule
+
+\emph{Q5. The instructor was well organised in class and presented the material clearly.} & 4.1 \newline (3.7)  & 4.2 \newline (3.7)  & 4.4 \newline (3.9)  & 4.0 \newline (4.0) & 3.5 \newline (3.7) \\ \midrule
+
+\emph{Q6. The instructor used effective teaching methods.} & 4.2 \newline (3.6)  & 4.2 \newline (3.7) & 
+4.2 \newline (3.7)  & 3.7 \newline (3.7)  & 3.8 \newline (3.6) \\ \midrule
+
+\emph{Q7. The instructor was responsive to students’ questions and concerns, given the class size.} & 4.5 \newline (4.2)  & 4.7 \newline (4.1) & 4.5 \newline (4.2)  & 4.3 \newline (4.2) & 4.9 \newline (4.1)  \\ \midrule
+
+\emph{Q8. The instructor fostered an environment of mutual respect and engagement in learning.} & 4.7 \newline (4.2)  & 4.8 \newline (4.1) & 4.7 \newline (4.1)  & 4.3 \newline (4.2) & 5.0 \newline (4.1)  \\ \midrule
+
+Q9. The course materials contributed to learning the subject matter. & 4.2 \newline (4.0)  & 4.5 \newline (4.0) & 
+4.2 \newline (4.0)   & 4.0 \newline (4.1) & 3.3 \newline (4.0)  \\ \midrule
+
+Q10. The course activities (inside and outside the classroom) engaged me actively in my learning process. & 4.4 \newline (3.8)  & 4.6 \newline (3.8) & 4.3 \newline (3.8)  & 3.8 \newline (3.9) & 4.2 \newline (3.8)  \\ \midrule
+
+Q11. The evaluation methods used in this course were fair and appropriate. & 4.2 \newline (3.7)  & 4.3 \newline (3.8) & 
+4.2 \newline (3.8)  & 3.8 \newline (3.8)  & 4.2 \newline (3.8) \\ \midrule
+
+Q12. I was provided with useful feedback on my progress in the course. & 3.8 \newline (3.7)  & 4.4 \newline (3.6)  & 
+4.4 \newline (3.8)  & 3.5 \newline (3.7)  & 4.1 \newline (3.6) \\ \midrule
+
+Q13. The course workload was appropriate, given the credit weight and the scheduled activity hours. & 3.5 \newline (3.7)  & 3.5 \newline (3.8)  & 3.5 \newline (3.8)  & 3.3 \newline (3.7)  & 4.2 \newline (3.7) \\ \midrule
+
+Q14. As a result of this course, I have a greater appreciation for the relevance of this topic to my chosen profession. & 4.3 \newline (3.9)  & 4.4 \newline (3.8)  & 4.4 \newline (3.8)  & 3.6 \newline (3.9)  & 3.9 \newline (3.9)  \\ \midrule
+
+\bottomrule
+\end{tabular}
+\caption{Courses and curricula developed and/or taught}
+\label{tab:courses-taught}
+\end{table}
+
+
+
+\section{Talent Care and Student Supervision}
+\paragraph{Supervising PhD and MSc theses.}
+Starting from my early PhD studies, I have been active in talent care by supervising MSc and PhD students. I have been the \emph{main scientific advisor of 11 PhD students} (5 completed, 3 PhD candidates to complete in Summer 2019), and co-supervised 3 more PhD students (2 completed, 1 PhD candidate). I also supervised 20+ MSc theses since 2001. All of my \emph{seven best paper awards had one of my PhD students} as the first author. Moreover, my PhD students were successfully competing at prestigious international Student Research Contests and Doctoral Symposiums (2x 1st prize at MODELS, 1x 2nd prize at SIGMOD, 1x 1st prize at STAF conferences).
+
+\paragraph{Supervising early research work.} 
+23 scientific reports written by MSc students under my tutoring participated successfully in a national two-phase (faculty and national-level) \href{http://www.otdt.hu/hu/cms/otdk/orszagos-tudomanyos-diakkori-konferencia/}{Scientific Students’ Associations Conference} organized for students who carry out early research work in Hungary. Early research results achieved by MSc students provided a basis for over 25 scientific publications published at international conferences. In 2009, I was selected as a \href{http://www.otdt.hu/page/kituntetesek/mak2009.php}{Distinguished Tutor} by the National Scientific Students Council (OTDT), a national prize requiring 10 years of successful tutoring, awarded bi-annually to only 3 tutors in the field of computer science. This way, I started to focus on talent care very early, in fact, as a 1st year PhD student. I was the \emph{first ever recipient} of the \href{https://otdk2017.mik.uni-pannon.hu/index.php/eredmenyek}{Csanád Imreh Award}, commemorating the Hungarian researcher who died %tragically 
+at a young age. 
+
+\paragraph{Careers of former students.} Together with 4 of my former PhD students (István Ráth, Ákos Horváth, Gábor Bergmann and Ábel Hegedüs), we \emph{founded a start-up company, IncQuery Labs Ltd.} in 2013 to provide industrial exploitation of our research results and our expertise in model-driven engineering. András Balogh (whom I co-supervised) is now Chief Technology Officer at ThyssenKrupp Presta Hungary. Four of my former MSc students worked for Google, several of them went for \emph{large international companies} Nokia, Ericsson, Lufthansa Systems, National Instruments or small \emph{innovative startups}.
+
+\section{Experience in educational leadership}
+%(on research group, department, faculty, national level) 
+At BME, I was the \emph{operative leader} of the \href{http://inf.mit.bme.hu/en/}{Fault Tolerant Systems Research Group} (consisting of over 20-25 members) between 2012 and 2016. Within this role, I was in charge of coordinating many aspects of the everyday life and duties of the group including the strategic supervision of educational activities. 
+
+Since 2012, I am also a member of the \emph{strategic executive board of the department}. In 2013, I was nominated as a \emph{department representative at faculty-level coordination meetings} aiming for the development of a new curriculum on the MSc level, which officially started in February 2015. I have continuously been serving in \emph{cross-department committees for talent care} in the past 5 years. 
+
+On the faculty-level, I am member of the Informatics Doctoral School at the Faculty of Electric Engineering. Between 2014-16, I have been serving on the committee of the Doctoral School on Software Engineering (Informatics) to shape the education program of PhD students. On the national-level, I am a \emph{member of the Informatics Scientific Committee of the Hungarian Academy of Sciences} (elected as the youngest member first in 2011 and re-elected in 2014 and 2017). I was an external member of the Informatics Doctoral Committee of University of Szeged.
+
+At McGill University, I served on \emph{various senior committees on the department level} including faculty search, graduate student ranking for scholarships, strategic advisory board of the department chair, tenure and reappointment committee. On the university-level, I have been elected to serve as one of the two the \emph{representatives of Faculty of Engineering at the Council of Graduate and Postdoctoral Studies}. I also serve as the \emph{program director of the upcoming software engineering co-op program } where undergraduate students will need to spend four compulsory internship terms at companies.
+
+\section{Teaching and graduate supervision philosophy}
+
+Most of my courses have been organized along a common scheme. Students need to invest significant amount of work in completing a \emph{team project} of 3-5 persons. I assign a \emph{complex software/systems engineering challenge}, and ideally with a real customer, where students need to \emph{use modern software technologies} (e.g. IDEs, version control systems, etc.) and project management frameworks (like Basecamp, Trello) while learning also foundational concepts. 
+
+Maintaining the attention of students during lectures can be a challenging task. I try to postpone abstract mathematical definitions to the point when the main concepts are sufficiently demonstrated by small examples first. I frequently use various \emph{best practices of active learning} during my lectures (e.g. bug hunts on ill-formed software, various games and quizzes, small challenges discussed in small groups). I often \emph{demonstrate the practical relevance of concepts using real-world examples} and industrial case studies sometimes presented by industrial collaborators within invited lectures. Usually, \emph{my lectures are complemented with tutorials} on key technologies (e.g. Eclipse technologies or multi-tier web applications) actively co-developed by my graduate students which also provides a first teaching experience for them. 
+
+\paragraph{Supervision.} 
+I feel strong at \emph{motivating students to start exploring highly uncharted research areas}. The lack of significant previous work in a certain area frequently boosts the motivation of talented students. When publishing results, I help identify typical errors committed by students due to their lack of expertise in scientific writing which helps them achieve early successes. Then I gradually let them act more and more on their own to gradually gain independence in writing by the time they defend their PhD. Moreover, \emph{several PhD projects were grouped around complex open source projects and demonstrators} which facilitate team work between students and provide a greater visibility of their research for the public. My students have also frequently participated in long-term industrial collaborations in research intensive tasks.
+
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=.8\textwidth]{figures/teaching-eval}
+%\caption{Teaching evaluation at McGill Univeristy}
+%\label{fig:teaching-eval}
+%\end{figure}
+
+
+
+\end{document}
