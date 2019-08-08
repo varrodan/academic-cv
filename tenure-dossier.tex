@@ -1,0 +1,61 @@
+\documentclass[a4paper,11pt]{report}
+%\documentclass[a4paper,12pt]{article}
+%\usepackage[backend=biber,sorting=ydnt,maxnames=18,giveninits=true,labelnumber=true,defernumbers=true]{biblatex}
+%\usepackage[backend=biber,sorting=ydnt,maxnames=18,giveninits=true]{biblatex}
+%\usepackage[bibstyle=publist]{biblatex}
+\usepackage{xstring}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{12pt plus 1pt minus 0.5pt}{6pt plus 0.5pt}
+%\titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+\titlespacing*{\paragraph}
+{0pt}{3pt plus 1pt minus 0.5pt}{3pt plus 2pt minus 0.5pt}
+
+\usepackage{enumitem}
+\setlist{nosep}
+
+\usepackage{tcolorbox}
+
+\usepackage{fontspec}
+\setmainfont{Cambria}
+\setsansfont{Calibri}
+
+%\setlength{\itemsep}{0pt plus 1pt}
+%\setlength{\itemsep}{0pt}
+%\setlength{\topsep}{0pt}
+\setlength{\parskip}{3pt plus 0.5pt minus 0.5pt}
+%\setlength{\beforeskip}{3pt}
+
+
+%\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.85]{geometry}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+%\assignrefcontextkeyws[labelprefix=C]{C}
+%\assignrefcontextkeyws[labelprefix=J]{J}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}\lhead{Tenure Dossier} \rhead{August 2019}
+\chead{{\bf Dániel Varró}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+
+%\title{Teaching Portfolio}
+%\author{D\'aniel Varr\'o}
+%\date{August 2019}
+
+\begin{document}
+
+%\input{tenure-teaching-statement}
+\input{tenure-service-statement}
+%\input{tenure-ecse321-evaluation}
+
+\end{document}
