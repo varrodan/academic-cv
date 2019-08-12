@@ -14,8 +14,9 @@
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
 \titleformat{\chapter}[hang]{\huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\huge\bfseries}
-\titlespacing*{\section}{0pt}{12pt plus 1pt minus 0.5pt}{6pt plus 0.5pt}
+\titlespacing*{\section}{0pt}{6pt plus 1pt minus 0.5pt}{3pt plus 0.5pt}
 \titlespacing*{\chapter}{0pt}{12pt plus 1pt minus 0.5pt}{6pt plus 0.5pt}
+\titlespacing*{\subsection}{0pt}{6pt plus 1pt minus 0.5pt}{3pt plus 0.5pt}
 %\titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
 
 \titlespacing*{\paragraph}
@@ -57,11 +58,13 @@
 %\assignrefcontextkeyws[labelprefix=J]{J}
 
 \renewcommand*{\mkbibnamegiven}[1]{%
-\ifpartannotation{family}{self}{\textbf{#1}}{#1}}
+%\ifpartannotation{family}{self}{\textbf{#1}}{#1}}
+\ifpartannotation{family}{self}{\ifcategory{mcgill}{\mkbibbold{\underline{#1}}}{\textbf{#1}}}{#1}}
 
 \renewcommand*{\mkbibnamefamily}[1]{%
 \ifpartannotation{family}{student}{#1\textsuperscript{*}}{%
-\ifpartannotation{family}{self}{\textbf{#1}}{#1}}}
+%\ifpartannotation{family}{self}{\textbf{#1}}{#1}}}
+\ifpartannotation{family}{self}{\ifcategory{mcgill}{\mkbibbold{\underline{#1}}}{\textbf{#1}}}{#1}}}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}\lhead{Tenure Dossier} \rhead{August 2019}
@@ -81,6 +84,7 @@
 %\DeclareRefcontext{extref}{labelprefix=X,sorting=none}
 \DeclareRefcontext{extref}{sorting=none}
 \DeclareBibliographyCategory{own}
+\DeclareBibliographyCategory{mcgill}
 
 \begin{document}
 
@@ -88,28 +92,29 @@
 \input{tenure-service-statement}
 %\input{tenure-ecse321-evaluation}
 
-\appendix
+%\appendix
 
 \newrefcontext{extref}
 \printbibliography[heading=bibliography,notcategory=own,title=External references]
 \lhead{References} 
 
 \newpage
+
 %================================================
-\section*{List of Publications}
+\chapter{List of Publications}
 \lhead{List of publications} 
 
 \begin{table}[htb]
 \begin{tabular}{@{}lllll@{}}
 \toprule
 \textbf{Publications} & \textbf{Lifetime} (20y) & \textbf{McGill} (3y) & \textbf{Student co-author} \\ \midrule
-Journals & 45 & 6 & 28 \\ \midrule
+Journals & 46+1 & 10 & 31 \\ \midrule
 Book chapters & 9 & 1 & 6  \\ \midrule
-Conferences & 68 & 16 & 54  \\ \midrule
-Workshops & 33 & 2 & 20  \\ \midrule
+Conferences & 73 & 20 & 57  \\ \midrule
+Workshops & 33 & 3 & 20  \\ \midrule
 Other & 3 & 0 & 2  \\ \midrule
 Invited & 7 & 0 & N/A   \\ \midrule
-Edited & 10 & 1 & N/A \\ \midrule
+Edited & 11 & 2 & N/A \\ \midrule
 %PhD theses &  9 & 1 & All \\ \midrule
 \bottomrule
 \end{tabular}
@@ -118,7 +123,8 @@ Edited & 10 & 1 & N/A \\ \midrule
 \end{table}
 
 
-\emph{Comments to publication list:} Names of students who worked under my supervision (or co-supervision) at the time of publication are marked with \textsuperscript{*}. The first author of a paper is frequently a graduate student who made the most direct contribution to the research. The last author is typically the supervisor who signs the research program. However, other policies of authorship are also common in case of cross-institutional collaborations (e.g. alphabetical order, mixed alphabetical, etc.). 
+\emph{Comments to publication list:} Names of students who worked under my supervision (or co-supervision) at the time of publication are marked with \textsuperscript{*}. The first author of a paper is frequently a graduate student who made the most direct contribution to the research. The last author is typically the supervisor who signs the research program. However, other policies of authorship are also common in case of cross-institutional collaborations (e.g. alphabetical order, mixed alphabetical, etc.). My own name is printed in \textbf{bold}, while my name is also \textbf{\underline{underlined}} for all 
+publications based on research conducted at least in part after appointment to McGill University.
 
 %============= Books and Book chapters ================
 \nocite{fmi2004,nagl65-2010,bpel2sal-sensoria-book,sensoria-uml,SENSORIABook:AdvancesInGT,%
@@ -126,6 +132,8 @@ mdegt2005-ggzvvv,caise2011-revised,fmic2005-pv,fmhe2018}
 
 \addtocategory{own}{fmi2004,nagl65-2010,bpel2sal-sensoria-book,sensoria-uml,SENSORIABook:AdvancesInGT,%
 mdegt2005-ggzvvv,caise2011-revised,fmic2005-pv,fmhe2018}
+
+\addtocategory{mcgill}{fmhe2018}
 
 
 %============= Journal papers ================
@@ -153,7 +161,11 @@ Rath-sosym09,Bergmann-gtvmt09,%
 Bergmann-sttt10,Gilmore-sosym10,eceasst2010-guided,eceasst2011-type,%
 sosym2012-tools,sosym2011-cdt,sosym2011-csp,%
 scp2015,ause2015,ist2015,sosym2016-trace,sosym2017-dsl,%
-sosym2018-cep,sosym2016-viatra-invited,sosym2017-mondo,sosym2017-tb,act2017,sosym2018-mt,ieeesw2018} 
+sosym2018-cep,sosym2016-viatra-invited,sosym2017-mondo,sosym2017-tb,act2017,sosym2018-mt,ieeesw2018,%
+sttt-2019-cps,sttt-2019-div,sosym-2019-gamma} 
+
+\addtocategory{mcgill}{sosym2017-dsl,sosym2018-cep,sosym2016-viatra-invited,sosym2017-mondo,sosym2017-tb,act2017,sosym2018-mt,ieeesw2018,sttt-2019-cps,sttt-2019-div,sosym-2019-gamma} 
+
 
 %============= Conference papers ================
 
@@ -191,7 +203,12 @@ icmt2015,icgt2015,%
 fase2016-solver,fase2016-merge,icgt2016,MODELS2016-access,MODELS2016-bx,MODELS2016-metrics,%
 esec-fse2017,models2017,adbis2017,icmt2017,%
 icse2018-solver,icse2018-gamma,fase2018-diverse,fase2018-cps,models2018,vlhcc2018,nfm2018,models2018-tool,%
-icse2019-tool}
+icse2019-tool,wf-iot-2019,models2019-wcet,models2019-systest}
+
+\addtocategory{mcgill}{MODELS2016-access,MODELS2016-bx,MODELS2016-metrics,%
+esec-fse2017,models2017,adbis2017,icmt2017,%
+icse2018-solver,icse2018-gamma,fase2018-diverse,fase2018-cps,models2018,vlhcc2018,nfm2018,models2018-tool,%
+icse2019-tool,wf-iot-2019,models2019-wcet,models2019-systest}
 
 \nocite{dasc2010-hvs,Daboczi-AWSN2013,dasc2014}
 \addtocategory{own}{dasc2010-hvs,Daboczi-AWSN2013,dasc2014}
@@ -211,7 +228,7 @@ Kolovos-bigmde2013,Izso-bigmde2013,%
 bigmde2014,cmseba2014,mpm2014,oss4mde2014,vao2014,%
 staf2015-project,ttc2015,gemoc2015,%
 BX2016,STAF-proj-2016,commitmde2016,%
-commitmde2017}
+commitmde2017,mdeintelligence2019}
 
 \addtocategory{own}{GRATRA2000,DDECS2000,WTUML01,%
 edcc2002-svp,FMOODS2002,AGT2002,%GRABATS2002,GTVMT2002,
@@ -226,7 +243,9 @@ Kolovos-bigmde2013,Izso-bigmde2013,%
 bigmde2014,cmseba2014,mpm2014,oss4mde2014,vao2014,%
 staf2015-project,ttc2015,gemoc2015,%
 BX2016,STAF-proj-2016,commitmde2016,%
-commitmde2017}
+commitmde2017,mdeintelligence2019}
+
+\addtocategory{mcgill}{commitmde2016,commitmde2017,mdeintelligence2019}
 
 %============= Invited papers ================
 
@@ -235,7 +254,7 @@ commitmde2017}
 
 %============= Edited proceedings ================
 
-\nocite{gtvmt2006,icgt2006-grabats,grabats2010,agtive2011,amt2012,fase2013,icmt2014,staf2015-ds,sle2016,staf2016-ws}
+\nocite{gtvmt2006,icgt2006-grabats,grabats2010,agtive2011,amt2012,fase2013,icmt2014,staf2015-ds,sle2016,staf2016-ws,mise2019}
 \addtocategory{own}{gtvmt2006,icgt2006-grabats,grabats2010,agtive2011,amt2012,fase2013,icmt2014,staf2015-ds,sle2016,staf2016-ws,mise2019}
 
 %============= End of own papers ================
@@ -248,10 +267,10 @@ commitmde2017}
 \printbibliography[heading=subbibliography,filter=books,category=own,title=Books and Book Chapter (Total: 9)]
 
 \newrefcontext{jref}
-\printbibliography[heading=subbibliography,category=own,type=article,notkeyword={workshop},notkeyword={invited},title=Refereed Journals incl. Electronic Journals (Total: 45)]
+\printbibliography[heading=subbibliography,category=own,type=article,notkeyword={workshop},notkeyword={invited},title=Refereed Journals incl. Electronic Journals (Total: 47)]
 
 \newrefcontext{cref}
-\printbibliography[heading=subbibliography,category=own,notkeyword={invited},notkeyword={other},notkeyword={workshop},type=inproceedings,title=Peer Reviewed Conference Papers (Total: 69)]
+\printbibliography[heading=subbibliography,category=own,notkeyword={invited},notkeyword={other},notkeyword={workshop},type=inproceedings,title=Peer Reviewed Conference Papers (Total: 73)]
 
 \newrefcontext{oref}
 \printbibliography[heading=subbibliography,category=own,keyword={other},type=inproceedings,title=Other Conference Papers (Total: 3)]
@@ -264,5 +283,6 @@ commitmde2017}
 
 \newrefcontext{eref}
 \printbibliography[heading=subbibliography,category=own,type=proceedings,title=Edited Volumes (Total: 10)]
+
 
 \end{document}

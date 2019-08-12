@@ -38,7 +38,7 @@ System design is captured by \emph{high-level engineering models} using modeling
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=.7\textwidth]{figures/mbse}
+\includegraphics[width=.65\textwidth]{figures/mbse}
 \caption{Models transformations in model-based systems engineering}
 \label{fig:mbse}
 \end{figure}
@@ -69,7 +69,7 @@ All major contributors of the incremental graph query technology are my former P
 With my students, A. Balogh, Z. Balogh, G. Bergmann, Á. Hegedüs, Á. Horváth, I. Ráth, Z. Ujhelyi, we proposed novel model transformation concepts to capture mappings within and between various modeling languages. The scientific results provided foundations of the open source \href{https://www.eclipse.org/viatra/}{VIATRA} model transformation framework \cite{SCP2002,ASE2002,uml2004-meta,scp-2007,sosym2016-viatra-invited} which has been successfully developed along three generations since 2000. Novel concepts proposed by us for the first time include \emph{change-driven transformations} \cite{Rath-models09,sosym2011-cdt}, \emph{model transformation by example} (MTBE) \cite{models2006-varro,sosym2008-mtbe}, \emph{reactive transformations} \cite{icmt08-rbov08,icmt2015,sosym2016-viatra-invited} or \emph{model transformation slicing} \cite{ase2011-mtslice,icst2012}.
 
 \paragraph{Impact.} 
-In addition to the industrial use above, we published our results on the VIATRA framework at major scientific venues of model-driven engineering including \cite{SCP2002,ASE2002,uml2004-meta,models2006-varro,scp-2007,Bergmann-icmt09,Rath-sosym09,Rath-models09,Bergmann-sttt10}, which have been cited well over 2000 times. The paper \cite{uml2004-meta} got the \textbf{10-year Most Influential Paper Award} at the IEEE/ACM MODELS 2014 conference (the main scientific forum of my research area), and I was invited to write an expert panel paper to the Software and Systems Modeling journal (SoSyM) \cite{sosym2016-viatra-invited}. Our first paper on change-driven transformations \cite{Rath-models09} received \textbf{Springer Best Paper Award} at IEEE/ACM MODELS 2009. The concepts of MTBE have been taken up by 12 independent research groups worldwide. I delivered \emph{several keynote talks} at international scientific conferences and summer schools on related topics.
+In addition to its industrial use, we published our results on the VIATRA framework at major scientific venues of model-driven engineering including \cite{SCP2002,ASE2002,uml2004-meta,models2006-varro,scp-2007,Bergmann-icmt09,Rath-sosym09,Rath-models09,Bergmann-sttt10}, which have been cited well over 2000 times. The paper \cite{uml2004-meta} got the \textbf{10-year Most Influential Paper Award} at the IEEE/ACM MODELS 2014 conference (the main scientific forum of my research area), and I was invited to write an expert panel paper to the Software and Systems Modeling journal (SoSyM) \cite{sosym2016-viatra-invited}. Our first paper on change-driven transformations \cite{Rath-models09} received \textbf{Springer Best Paper Award} at IEEE/ACM MODELS 2009. The concepts of MTBE have been followed by 12 independent research groups worldwide. I delivered \emph{several keynote talks} at international conferences and summer schools on related topics.
 
 \paragraph{My role.} 
 The first open source version of VIATRA was developed by my graduate students, and I served as the strategic leader of the project until 2016 when development was taken over by IncQuery Labs Ltd. Therefore, I played key role in maturing a research prototype into an industrial framework. I was the main contributor (and hence, the first author) of the expert panel paper invited to the SoSyM journal.  I was the main supervisor of 5 PhD students and co-supervisor of 2 PhD students in addition to 20+ MSc students doing research and development on related topics. Co-founding IncQuery Labs enabled to keep together the core team for 15 years by now. I was the principal investigator (PI) of three IBM Faculty Awards, and an ERC-HU Starting Grant application and the site leader of various collaborative European projects (e.g. SENSORIA, SecureChange, MONDO) .
@@ -86,17 +86,19 @@ In collaboration with researchers from University of Szeged, IncQuery was succes
 Our first paper \cite{vlhcc05-vsv} triggered a series of annual Transformation Tool Contests (over 12 editions) and it received a \textbf{Most Influential Paper Award} at IEEE VL/HCC 2016. Moreover, \cite{csmr2014} received the \textbf{Best Paper Award} at CSMR-WCRE 2014. The Train Benchmark \cite{ttc2015} has been used by other researchers (e.g. D. Kolovos, X. De Carlos, G. Varró, G. Hinkel, H. Giese) for performance comparison from several independent research groups. Related papers have been cited over 275 times.
 
 \paragraph{My role.} 
-I was one of the three researchers who proposed the first ever benchmark for model transformations in 2005. 
+I was one of the three researchers who proposed the first benchmark for model transformations in 2005. 
 %Benchmarking was a focal topic of my PhD student G. Szárnyas, while 
-Later, I was a co-organizer of the first open transformation tool comparison as part of the AGTIVE 2007 conference \cite{agtive07-toolcontest}. Several students of mine (G. Bergmann, Á. Hegedüs, Á. Horváth, B. Izsó, I. Ráth, Z. Ujhelyi) made significant contributions to past benchmarking activities. I was the site leader at BME of the MONDO FP7 project and a collaborator in the MOGENTES FP7 project, which financed some of the related research activities.
+Later, I was a co-organizer of the first open transformation tool comparison as part of the AGTIVE 2007 conference \cite{agtive07-toolcontest}. My students (G. Bergmann, Á. Hegedüs, Á. Horváth, B. Izsó, I. Ráth, Z. Ujhelyi) made significant contributions to past benchmarking activities. I was the site leader at BME of the MONDO FP7 project, 
+%and a collaborator in the MOGENTES FP7 project, 
+which financed some of the related research activities.
 
 \subsection{Rule-based guided design space exploration}
 
 \paragraph{Results.}
-Design space exploration (DSE) aims to derive design candidates fulfilling heterogeneous design constraints from an initial design sketch by applying a pre-defined set of operations. We proposed the concept of \emph{rule-based guided design space exploration} \cite{Horvath-models09,sosym2011-csp,ase2011-dse,ause2015,ase2014,mpm2014} to incorporate complex structural and consistency constraints frequently present in architecture models of automotive and avionics applications. The exploration process can be heuristically guided by hints obtained from the designer. DSE was applied to provide quick fixes in design environments built for business modeling \cite{vlhcc2011}. 
+Design space exploration (DSE) aims to derive design candidates fulfilling various design constraints from an initial design sketch by applying a pre-defined set of operations. We proposed the concept of \emph{rule-based guided design space exploration} \cite{Horvath-models09,sosym2011-csp,ase2011-dse,ause2015,ase2014,mpm2014} to incorporate complex structural consistency constraints frequently present in architecture models of automotive and avionics applications. The exploration process can be heuristically guided by hints obtained from the designer. DSE was applied to provide quick fixes in design environments built for business modeling \cite{vlhcc2011}. 
 
 \paragraph{Impact.} 
-Our paper \cite{ase2011-dse} at the IEEE ASE 2011 conference received an \textbf{ACM Distinguished Paper Award}. Other researchers (e.g. H. Vangheluwe, S. Zschaler and M. Wimmer) followed related lines of investigations building on our results. Key papers \cite{Horvath-models09,vlhcc2011,sosym2011-csp,ase2011-dse,ause2015,ase2014} received over 150 citations in total. 
+Our paper \cite{ase2011-dse} at the IEEE ASE 2011 conference received an \textbf{ACM Distinguished Paper Award}. Other researchers (e.g. H. Vangheluwe, S. Zschaler and M. Wimmer) conducted research building on our results. Key papers \cite{Horvath-models09,vlhcc2011,sosym2011-csp,ase2011-dse,ause2015,ase2014} received over 150 citations in total. 
 %The VIATRA-DSE open source software won \emph{two first prizes at the 9th Transformation Tool Contest} (TTC 2016). The prototype software was evaluated at NASA Jet Propulsion Lab for high-level mission planning.
 
 \paragraph{My role.} 
@@ -109,7 +111,7 @@ With my students, G. Bergmann, Á. Hegedüs, Á. Horváth, I. Ráth, Z. Ujhelyi,
 We proposed a \emph{formal validation technique for domain-specific languages} \cite{models2013} in the same project to find inconsistencies in language specifications. The \href{https://github.com/viatra/massif/}{Massif} open source project interconnects of Matlab Simulink models and EMF-based modeling tools. 
 
 \paragraph{Impact.} 
-We published our results at top scientific venues of model driven engineering (including the MODELS conference, SoSyM journal). This line of research and development (started as part of the DIANA FP6 European project with large avionics companies) evolved into a 2-year \emph{collaborative industrial project funded by Embraer}, the large Brazilian aircraft manufacturer. As such, it had significant industrial impact. Our formal validation approach \cite{models2013} received \textbf{Springer Best Paper Award} at the IEEE/ACM MODELS 2013 conference. The Massif open source project has been used at several companies including Thales and MapleSoft.
+We published our results at top scientific venues of model driven engineering (e.g. MODELS conference, SoSyM journal). This line of research (started as part of the DIANA FP6 European project with large avionics companies) evolved into a 2-year \emph{collaborative industrial project funded by Embraer}, the large Brazilian aircraft manufacturer. As such, it had significant industrial impact. Our formal validation approach \cite{models2013} received \textbf{Springer Best Paper Award} at the IEEE/ACM MODELS 2013 conference. The Massif open source project has been used at several companies including Thales and MapleSoft.
 
 \paragraph{My role.} 
 I was the main supervisor of all the student contributors listed above, and consequently, I was the last author of most publications along this research line. I was the principal investigator of the collaborative project funded by Embraer, and I was the site leader at BME in the DIANA FP6 European project and the CONCERTO ARTEMIS project. I was a co-founder and Vice-President of Research and Development at OptXware Ltd., a start-up company founded at BME, which was partially acquired in 2013 by a large European company in the automotive domain. 
@@ -129,7 +131,7 @@ Recent advances in machine learning drives innovation in many sectors, e.g. to d
 
 \begin{figure}
 \centering
-\includegraphics[width=.7\textwidth]{figures/smart-safe-cps}
+\includegraphics[width=.65\textwidth]{figures/smart-safe-cps}
 \caption{Smart and safe cyber-physical systems}
 \label{fig:smart-safe-cps}
 \end{figure}
@@ -150,6 +152,27 @@ My recent research has been aiming to develop innovative \emph{design, synthesis
 %Furthermore, I was directly involved in strategically shaping proposals for European projects and training networks where IncQuery Labs Ltd was the involved partner.  Along these lines, we achieved the following major results in the past 5-6 years. 
 
 \subsection{Distributed graph queries for runtime monitoring} 
+
+\begin{table}[htb]
+\footnotesize
+\begin{tabular}{@{}p{5cm}p{11cm}@{}}
+\toprule
+%\textbf{ECSE 429 Questions} & \textbf{F18} \\ 
+%\toprule
+Publications &  \cite{sttt-2019-cps,fase2018-cps,wf-iot-2019,models2019-wcet} (all refereed), 1x \textbf{Best Paper Award} 
+\cite{fase2018-cps} \\ \midrule
+Graduate students at McGill & M. Búr, F. Khan \\ %\midrule
+McGill undergraduates (SURE) &  C. Grosdidier \\ \midrule
+%Past graduate students &  I. Ráth, Á. Horváth \\ \midrule
+MTA-BME Lendület collaborators & A. Vörös \\ \midrule
+%Other collaborators & G. Szilágyi, Z. Micskei, L. Balogh, B. Hegyi, B. Horváth, Z. Mázló \\ \midrule
+%Key impact &  Publications at leading venues (including ICSE),  \\ \midrule
+Funding &  NSERC DG (CA), MTA-BME Lendület (HU), NSERC Engage (under review) \\ %\midrule
+\bottomrule
+\end{tabular}
+\caption{Summary: Distributed graph queries for runtime monitoring}
+\end{table}
+
 \paragraph{Motivation.} 
 Since upfront formal verification is typically infeasible for smart CPSs, runtime monitoring is a common practice to continuously detect the violation of (safety) properties at runtime. Runtime monitoring has been addressed by runtime verification (RV) techniques \cite{Leucker2009,Mitsch2014} which provide formal precision, but offer a low-level specification language (with simple atomic predicates to capture information about the system). Recent RV approaches \cite{Havelund2015} started to exploit rule-based techniques over a richer (relational or graph-based) information model. 
 Runtime models (\cite{BlairBF09,Szvetits2013}) provide a rich knowledge representation to capture the runtime operational state and context of a smart CPS as typed and attributed graphs to serve as a unifying semantic basis for runtime assurance of self-adaptive systems (SAS) in \cite{Cheng2014,Vogel2014}. While graph models are widely used internally in various design tools for CPS (e.g. Capella, Artop), real-time CPSs dominantly use low-level data structures with static (i.e. compile-time) memory allocation to ensure resource constraints such as memory limits or deadlines, which is a major limitation.
@@ -161,13 +184,34 @@ We evaluated the performance of our graph query based runtime monitors \cite{wf-
 In order to use such graph query techniques for monitoring purposes in hard real-time applications, the worst case execution time (WCET) of the monitoring programs needs to be estimated. Thus in our recent MODELS 2019 paper \cite{models2019-wcet}, we proposed a long-term research agenda and an initial approach that exploits existing WCET analysis tools for calculating WCET for graph queries.
 
 \paragraph{Impact.} 
-We published several papers at leading conferences  \cite{fase2018-cps,nfm2018,models2019-wcet} and journals \cite{sttt-2019-cps}. Our paper \cite{fase2018-cps} received an \textbf{EASST Best Paper Award} at ETAPS 2018 (1 award out of over 140 papers). The MoDeS3 framework has been demonstrated at numerous industrial and other public events at BME (e.g. at the annual Researchers Night). These conceptual results have been successfully used in the MoDeS3 open demonstrator for smart and safe CPSs \cite{nfm2018}. I delivered a keynote talk at Ericsson Industrial Day 2016, at the CSCS 2016 Hungarian conference for PhD students, and several invited lectures at the DSM-TP international summer school in several consecutive years. This research line will provide a baseline for an upcoming industrial collaboration with Predikat Inc. (Canada) where runtime monitoring of performance degradations in multi-tier web applications will be carried out in the scope of an NSERCE Engage project (still under review).
+We published several papers at leading conferences  \cite{fase2018-cps,models2019-wcet} and journals \cite{sttt-2019-cps}. Our paper \cite{fase2018-cps} received an \textbf{EASST Best Paper Award} at ETAPS 2018 (1 award out of over 140 papers). The MoDeS3 framework has been demonstrated at numerous industrial and other public events at BME (e.g. at the annual Researchers Night). These conceptual results have been successfully used in the MoDeS3 open demonstrator for smart and safe CPSs \cite{nfm2018}. I delivered a keynote talk at Ericsson Industrial Day 2016, at the CSCS 2016 Hungarian conference for PhD students, and several invited lectures at the DSM-TP international summer school in several consecutive years. Our results will provide a basis for an upcoming industrial collaboration with Predikat Inc. (Canada) where runtime monitoring of performance degradations in multi-tier web applications will be carried out (the NSERC Engage project is still under review).
 % and in an initial prototype developed for the successful Hungarian start-up TeqBall.
 
 \paragraph{My role.}
 I was the strategic initiator of this line of research. I was also the main supervisor of M. Búr (PhD student at McGill) and provided strategic guidance for A. Vörös (assistant professor at BME). I contributed to the precise mathematical formulation of the results \cite{fase2018-cps,sttt-2019-cps,models2019-wcet} and also to the textual contents of all publications. I was the PI of a related NSERC Discovery Grant (Canada), an NSERC Engage application and the Lendület Research Group (Hungary). 
 
 \subsection{Automated generation of domain-specific graph models: The CORE-DISC challenge}
+
+\begin{table}[htb]
+\footnotesize
+\begin{tabular}{@{}p{5cm}p{11cm}@{}}
+\toprule
+%\textbf{ECSE 429 Questions} & \textbf{F18} \\ 
+%\toprule
+Publications &  \cite{fmhe2018,sosym2017-dsl,sttt-2019-div,fase2018-diverse,fase2016-solver,icse2018-solver,icse2019-tool,MODELS2016-metrics,MODELS2016-bx,models2018} (all refereed), 2x defended PhD theses (by O. Semeráth, G. Szárnyas) \\ \midrule
+Graduate students at McGill & A. Babikian \\ %\midrule
+Graduate research trainees at McGill &  O. Semeráth, G. Szárnyas (PhD students defended at BME, supervisor), K. Marussy (PhD student at BME, co-supervisor)  \\ %\midrule
+McGill undergraduates (SURE) &  A. Babikian, S. Pilarski, A. Li, B. Chen, L. Li, M. Ding, V. Gidla \\ \midrule
+Past graduate students &  G. Bergmann, Á. Horváth \\ \midrule
+MTA-BME Lendület collaborators & R. Farkas, A. Vörös \\ \midrule
+Other collaborators & Z. Szatmári \\ \midrule
+%Key impact &  Publications at leading venues (including ICSE),  \\ \midrule
+Funding &  NSERC DG (CA), MTA-BME Lendület (HU) \\ %\midrule
+\bottomrule
+\end{tabular}
+\caption{Summary: Automated generation of domain-specific graph models}
+\end{table}
+
 \paragraph{Motivation.}
 Graphs are key abstractions in science and engineering. They may represent linked data in graph databases, complex designs of cyber-physical systems or critical contextual situations for autonomous systems. Synthetic graph generators are essential when the use of real graph models is restricted (to respect privacy regulations or intellectual properties of companies) or impractical (to find corner-cases for safety assurance). I initiated the CORE-DISC \emph{long-term research program program} \cite{fmhe2018} to develop a next generation of synthetic graph generator techniques and tools that are customizable to different application domains to derive graph models which are simultaneously \emph{CO: consistent} (graphs shall satisfy various structural logic constraints of the domain), \emph{RE: realistic} (synthetic graphs shall resemble real graphs of a given domain), \emph{DI: diverse} (any pair of graphs shall be structurally distant from each other) and \emph{SC: scalable} (the graph generator shall be able to derive large graph models). Such synthetic graphs are intended to be used as test cases in tool qualification process prescribed by safety standards.% (like DO-330).
 
@@ -179,9 +223,8 @@ Moreover, we provided the first characterization of \emph{realistic models} in \
 %aimed  Generating consistent After a series of initial results , we rea attempts with negative scalabil results 
 
 \paragraph{Impact.}
-We published our results in a series of papers at leading conferences and journals of software engineering including 1 book chapter, 1 journal paper at SoSyM \cite{sosym2017-dsl}, 1 at \cite{sttt-2019-div} in Software Tools on Technology Transfer (Springer), 2 papers at MODELS \cite{MODELS2016-bx,models2018}, 2 papers at FASE \cite{fase2016-solver,fase2018-diverse}. I also give an invited talk on this topic at the CSER 2017 conference in Montreal.
-
-As a special highlight, we published a research paper \cite{icse2018-solver} and a tool paper \cite{icse2018-tool} at ICSE, the prime general-purpose software engineering conference, which is a major success as no modeling papers had been published in the previous three editions of ICSE. 
+We published our results in a series of papers at leading conferences and journals of software engineering including 1 book chapter, 1 journal paper at SoSyM \cite{sosym2017-dsl}, 1 at \cite{sttt-2019-div} in Software Tools on Technology Transfer (Springer), 2 papers at MODELS \cite{MODELS2016-bx,models2018}, 2 papers at FASE \cite{fase2016-solver,fase2018-diverse}. I also two invited talks on this topic: one at the CSER 2017 conference in Montreal and one at the Search Based Model Engineering Workshop at King's College London in 2018.
+As a special highlight, we published a research paper \cite{icse2018-solver} and a tool paper \cite{icse2019-tool} at ICSE, the prime general-purpose software engineering conference, which is a major success as no modeling papers had been published in the previous three editions of ICSE. 
 The news about our ICSE paper \cite{icse2018-solver} was \emph{featured on the front page of the Hungarian Academy of Sciences} (\href{http://mta.hu/english/innovation-of-hungarian-researchers-could-revolutionise-car-industry-design-technology-testing-108434}{Eng}, \href{http://mta.hu/tudomany_hirei/magyar-kutatok-eredmenye-forradalmasithatja-az-autoipari-tervezoeszkozok-teszteleset-108355}{Hun}) and shared by \emph{six major news portals in Hungary}, and I received three invitations for interviews in radio channels. 
 %Our approach (published in \cite{sosym2017-dsl,act2017,fmhe2018,fase2018-diverse,icse2018-solver,icse2019-tool}) \emph{scales 1-2 orders of magnitude better} than competitors using state-of-the-art logic solvers like Alloy (MIT) or Z3 (Microsoft Research) and its scalability is comparable to search-based techniques \cite{Soltana2017}. 
 
@@ -194,32 +237,94 @@ I was the sole PhD supervisor of key contributors (O. Semeráth, G. Szárnyas, A
 
 \subsection{Secure collaborative modeling}
 
+\begin{table}[htb]
+\footnotesize
+\begin{tabular}{@{}p{5cm}p{11cm}@{}}
+\toprule
+%\textbf{ECSE 429 Questions} & \textbf{F18} \\ 
+%\toprule
+Publications &  \cite{sosym2017-mondo,ieeesw2018,MODELS2016-access,fase2016-merge,esec-fse2017,%
+models2017,vlhcc2018,commitmde2016,commitmde2017} (all refereed), 1x PhD thesis (under review), 
+1x \textbf{Distinguished Paper Award} \cite{MODELS2016-access}
+\\ \midrule
+Graduate students at McGill & M. Búr  \\ %\midrule
+Graduate research trainees at McGill &  C. Debreceni (PhD student at BME, main supervisor) \\ \midrule
+Past graduate students &  G. Bergmann, I. Ráth \\ \midrule
+Other collaborators &   De Carlos, X. Mendialdua and S. Trujillo (Ikerlan, Spain), A. Barisic, V. Amaral, M. Goulao (Nova Univ. Lisbon, Portugal) \\ \midrule
+Funding &  MTA-BME Lendület (HU), MONDO (EU), NSERC DG (CA), %Bolyai scholarship (HU, secured by G. Bergmann)
+ \\ %\midrule
+\bottomrule
+\end{tabular}
+\caption{Summary: Secure collaborative modeling}
+\end{table}
+
 \paragraph{Motivation.}
 As a common industrial practice in model-based systems engineering, system integrators frequently outsource the development of various components to subcontractors in an architecture-driven supply chain where the collaboration between cross-organizational teams is facilitated by sharing models stored in model repositories. However, effective cross-organizational collaboration is hindered by numerous factors, such as (1) lack of appropriate fine-grained access control management to protect the intellectual property rights (IPR) of involved parties, (2) model fragmentation, or (3) the inability to combine online (GoogleDoc type) and offline (Git or SVN-like) collaboration schemes. 
 
 \paragraph{Results.} 
-Together with C. Debreceni, M. Búr, G. Bergmann and I. Ráth, we developed a collaborative modeling framework \cite{esec-fse2017,ieeesw2018} that enhances collaborative modeling repositories by providing secure views as an extra protection layer with rule-based high-level access control simultaneously enforced for both offline and online collaboration scenarios and adapted to software configuration management. As the core underlying novel concept, we developed a rule-based fine-grained access control technique using bidirectional transformations \cite{MODELS2016-access}. The soundness of the core collaboration scheme was formally proved and successfully applied for both online and offline collaborations in \cite{sosym2017-mondo}. To enhance the practical usefulness of the collaborative modeling framework, we developed an automated model merge technique driven by design space exploration \cite{fase2016-merge} (which was evaluated in a collaborative user study \cite{vlhcc2018}). Furthermore, we successfully developed an approach \cite{models2017} to implement the concepts of property-based locking that prevents unintentional model modifications during extensive collaboration. 
+Together with C. Debreceni, M. Búr, G. Bergmann and I. Ráth, we developed a collaborative modeling framework \cite{esec-fse2017,ieeesw2018} that enhances modeling repositories by providing secure views as an extra protection layer with rule-based high-level access control simultaneously enforced for both offline and online collaboration scenarios and adapted to software configuration management. As a novel underlying concept, we developed a rule-based fine-grained access control technique using bidirectional transformations \cite{MODELS2016-access}. The soundness of the core collaboration scheme was formally proved and successfully applied for both online and offline collaborations in \cite{sosym2017-mondo}. 
+Further technical details about the fine-grained model-level access control were published in two peer-reviewed workshop papers \cite{commitmde2016,commitmde2017}. 
+To enhance the practical usefulness of the collaborative modeling framework, we developed an automated model merge technique driven by design space exploration \cite{fase2016-merge} (which was evaluated in a collaborative user study \cite{vlhcc2018}). Furthermore, we successfully developed an approach \cite{models2017} to implement the concepts of property-based locking that prevents unintentional model modifications during extensive collaboration. 
 
 \paragraph{Impact.} 
-We published seven research papers \cite{fase2016-merge,MODELS2016-access,models2017,esec-fse2017,vlhcc2018,sosym2017-mondo,ieeesw2018} at leading scientific forums (including conferences like MODELS, FASE, ESEC/FSE, VL/HCC and journals like Software and Systems Modeling and IEEE Software). Paper \cite{MODELS2016-access} received \textbf{ACM Distinguished Paper Award} at the MODELS 2016 conference, while the papers above received over 40 citations (Google Scholar). Related concepts were integrated into an innovative product developed by IncQuery Labs Ltd. as reported in the tool paper \cite{models2018-tool}.
+We published seven research papers \cite{fase2016-merge,MODELS2016-access,models2017,esec-fse2017,vlhcc2018,sosym2017-mondo,ieeesw2018} at leading scientific forums (including conferences like MODELS, FASE, ESEC/FSE, VL/HCC and journals like Software and Systems Modeling and IEEE Software). Paper \cite{MODELS2016-access} received \textbf{ACM Distinguished Paper Award} at the MODELS 2016 conference, while the papers above received over 40 citations (Google Scholar). Related concepts were integrated into an innovative product developed by IncQuery Labs Ltd. \cite{models2018-tool}.
 %Paper \cite{vlhcc2018} carried out a user study in an industrial setting as part of the MPM4CPS EU COST Action.
 
 \paragraph{My role.} 
-I was the strategic initiator of this research line, thus the last author in most related publications (except for the collaborative paper \cite{vlhcc2018}). I am the main supervisor of C. Debreceni and M. Búr who were major technical contributors of the framework. I was the site leader of the MONDO FP7 project at BME where this line of research was started, and the PI of the Lendület project which provided continuity. I helped G. Bergmann (who is an assistant professor at BME) to successfully apply to the prestigious János Bolyai Scholarship in Hungary in a related research topic. 
+I was the strategic initiator of this research line, thus the last author in most related publications (except for the collaborative paper \cite{vlhcc2018}). I am the main supervisor of C. Debreceni and M. Búr who were major technical contributors of the framework. C. Debreceni has already submitted his PhD thesis, and his public defense is expected in Fall 2019. I was the site leader of the MONDO FP7 project at BME where this line of research was started, and the PI of the Lendület project which provided continuity. I helped G. Bergmann (who is an assistant professor at BME) to successfully apply to the prestigious János Bolyai Scholarship in Hungary in a related research topic. 
+
+\subsection{Digital Multidisciplinary Analysis and Design Optimization Platform}
+
+\begin{table}[htb]
+\footnotesize
+\begin{tabular}{@{}p{5cm}p{11cm}@{}}
+\toprule
+%\textbf{ECSE 429 Questions} & \textbf{F18} \\ 
+%\toprule
+Publications &  \cite{mdeintelligence2019} (refereed), 3x MEng thesis (in preparation) \\ \midrule
+Graduate students at McGill & M. Rangappa, J. Dhaliwal \\ \midrule
+Other collaborators &  M. Staniszewski, Frederic Villeneuve (and other Siemens engineers) \\ \midrule
+Funding &  NSERC CRD with Siemens (CA) \\ %\midrule
+\bottomrule
+\end{tabular}
+\caption{Summary: Digital multidisciplinary analysis and design optimization platform}
+\end{table}
+
+\paragraph{Context.}
+Gas turbines are a commonly used type of internal combustion engine used for power generation. The development of gas turbines requires creation of many different linked models by mechanical engineers. These models are used in gauging performance, designing secondary air systems, combustion, and other subsystems. Creation of design models can span across dozens of design tools which can integrate many data formats, disciplines, and requirements, which introduces significant software engineering challenges. For example, the large number of models inherently results in a huge design exploration space during the development process of an entire engine. Furthermore, the actual tool workflows need to be seamlessly integrated with the underlying development processes.
+
+\paragraph{Results.}
+This industrial CRD project started in 2018, and we work on innovative software-as-a-service solutions to integrate various design, analysis and optimization tools driven by workflows. This line of research is carried out together with my McGill MEng students, Maruthi Rangappa, Jasvir Dhaliwal and Sebastian Pilarski, and in collaboration with leading Siemens managers (M. Staniszewski and F. Villeneuve). We aim to develop a cloud-based solution to systematically store and query simulation results to allow fast iterations and a more agile design process. Moreover, we aim to exploit advance machine learning techniques to bring expertise gained from field data and simulated data directly to the mechanical engineers working on engine design. Initial results and a research roadmap has been proposed in \cite{mdeintelligence2019}, while two MEng theses about a graphical workflow editor and an "analysis tool as a service" infrastructure are planned to be submitted by J. Dhaliwal and M. Rangappa in Fall 2019.
+
+\paragraph{Impact.}
+While the project is still in an early phase, we made significant technological impact within Siemens. A software prototype developed by Sebastian Pilarski's will serve as the baseline software architecture for a cloud-based simulation environment being developed at Siemens. We also published a joint vision paper with leading Siemens managers at a MODELS 2019 workshop \cite{mdeintelligence2019}. 
+
+\paragraph{My role.}
+I am a co-PI of the NSERC project (PI: M. Kokkolaras - McGill, co-PI: H. Moustapha - ETS), and the only software engineering professor in the collaboration. I was contributing to the entire project preparation and proposal writing phase. I am the main supervisor of the three MEng students working on the project. In 2018, I was an invited speaker at the Siemens Industrial Day at ETS (Montreal), and also gave a talk about the project for graduate students.
 
 
-
-\subsection{Continuation of past research lines}
-\paragraph{Result.} 
-Naturally, I also continued research along research lines started in Stage 1 of my career, where major progress has been made after I joined McGill University. 
+\subsection{Continuation of previous research lines}
+\paragraph{Results.} 
+Naturally, I also continued previous research lines started in Stage 1 of my career. Below I summarize and report results where major progress has been made after I joined McGill University. 
 
 \begin{itemize}
 \item
 \textbf{Benchmarks for incremental graph queries:}
+With key contributions from G. Szárnyas (my PhD student), we prepared a journal paper \cite{sosym2017-tb} to extend the Train Benchmark with a cross-technology comparison of graph query techniques with over 10 tools (including relational databases, graph databases, Eclipse-based modeling tools, rule-based expert systems, etc.). Thanks to the free availability of its source code repository, the Train Benchmark has been actively used by four independent research groups within the model-driven engineering community.
+
+
+\item 
+\textbf{Model transformation techniques:}
+Together with O. Semeráth, C. Debreceni (my PhD students), K. Marussy (co-supervised by me) and Á. Horváth, we published two papers at the MODELS conference about the incremental backward synchronization of model transformations \cite{MODELS2016-bx} and fully incremental view model transformations \cite{models2018}. 
 
 \item
 \textbf{Design space exploration:}
-The VIATRA-DSE open source software won \emph{two first prizes at the 9th Transformation Tool Contest} (TTC 2016). The prototype software was evaluated at NASA Jet Propulsion Lab for high-level mission planning.
+Thanks to the key contributions from my PhD students, A. Nagy and O. Semeráth, the VIATRA-DSE open source software won \emph{two first prizes at the 9th Transformation Tool Contest} (\href{https://www.transformation-tool-contest.eu/2016/solutions_cra.html}{TTC 2016}). Subsequently, the prototype software was evaluated at NASA Jet Propulsion Lab for high-level mission planning.
+
+\item
+\textbf{Formal verification of reactive systems:}
+With V. Molnár, Á. Hajdu (graduate research trainees at McGill), B. Graics, A. Vörös, Z. Micskei, I. Majzik (staff members at BME and main supervisors of PhD student), we developed a high-level modeling language for semantically precise composition of reactive components defined by statecharts where each component may follow a different execution semantics (e.g. synchronous vs. asynchronous). The Gamma tool was demonstrated at ICSE 2018 \cite{icse2018-gamma} and the related research paper \cite{sosym-2019-gamma} is under review. I gave an invited talk and a tutorial about this line of research at the DSM-TP 2017 international summer school.
+
 
 \end{itemize}
 
@@ -252,13 +357,13 @@ Digitalization is a dominating trend in engineering in initiatives like Industry
 \paragraph{Main challenge.}
 While innovation for digitalization is driven by software and intelligent data processing techniques; however, there is too much optimism for their fast penetration to critical CPSs (like cars, aircrafts, space) while appropriate means of quality assurance is severely lacking, especially in the presence of an increased level of automation or autonomous behavior.
  
-\begin{itemize}
-\item[(1)] 
+%\begin{itemize}
+%\item[(1)] 
 While dozens of software tools are necessitated to a fully digital design of a complex CPS, quality assurance for tools and integrated tool chains is insufficient and represents a major risk for digitalization. How to trust a digital twin if one cannot trust the software tool used for designing it? Software safety standards of critical avionics systems (\href{https://standards.globalspec.com/std/1461615/rtca-do-330}{DO-330}) prescribe that only the output of a qualified tool can be trusted, and such a tool should meet the same requirements as the critical system component it designs. However, it makes tool qualification extremely costly.
 
-\item[(2)]
+%\item[(2)]
 Due to recent fatal accidents, the safety assurance of autonomous cyber-physical systems (like self-driving cars or autonomous drones) is still its infancy. Unfortunately, decades of verification and validation (V\&V) practices developed for traditional safety-critical software systems are not applicable to autonomous systems. Existing practices rely up exhaustive simulation for system validation, but statistical techniques do not provide sufficient level of dependability and coverage in case of extremely rare events where one combination of rare events may jeopardize safety.
-\end{itemize}
+%\end{itemize}
 
 \paragraph{Objectives.}
 As a high-level objective, my ongoing and future research aims to increase the level of trust in digitalization for CPSs by developing systematic validation techniques for design tool chains and autonomous systems by automatically synthesizing potentially unsafe or problematic corner-cases and contextual situations. While the potential of digitalization is unquestionable, this project will mitigate its risks and negative impacts.
@@ -273,7 +378,7 @@ In particular, I am interested in novel scientific foundations and scalable soft
 \paragraph{System-level assurance of autonomous CPS}
 %\paragraph{Key ideas.}
 Since safety-critical autonomous vehicles need to interact with an immensely complex and continuously changing environment, their assurance is a major challenge, and upfront design time assurance is generally regarded to be practically infeasible. While systems engineering practice necessitates assurance on multiple levels,  existing research focuses dominantly on component-level assurance while neglecting complex system-level traffic scenarios.
-Our research aims to address the system-level testing of the situation-dependent behavior of autonomous vehicles by combining various model-based techniques on different levels of abstraction. Major initial progress and a research roadmap (developed in collaboration with researchers from BME but still under my scientific leadership) is reported in a vision paper \cite{models2019-systest} accepted at the MODELS 2019 conference.
+Our research aims to address the system-level testing of the situation-dependent behavior of autonomous vehicles by combining various model-based techniques on different levels of abstraction. Major initial progress and a research roadmap (developed in a SURE project in Summer 2018 and later in collaboration with researchers from BME but still under my scientific leadership) is reported in a vision paper \cite{models2019-systest} accepted at the MODELS 2019 conference.
 
 %(1) Safety properties are continuously monitored in challenging test scenarios (obtained in simulators or field tests) using graph query and complex event processing techniques.  (2) To precisely quantify the coverage of an existing test suite with respect regulations of safety standards, we provide qualitative abstractions of causal, temporal, or geospatial data recorded in individual runs into situation graphs, which allows to systematically measure system-level situation coverage (on an abstract level) wrt. safety concepts captured by domain experts.  (3) Moreover, we can systematically derive new challenging (abstract) situations which justifiably lead to runtime behavior which has not been tested so far by adapting consistent graph generation techniques, thus increasing situation coverage. (4) Finally, such abstract test cases are concretized so that they can be investigated in a real or simulated context.
 
@@ -302,10 +407,11 @@ In the first stage of my career, I was successful in attracting a variety of sub
 
 \paragraph{Collaborative European projects: }
 Since 2005, I was the site leader or research coordinator at BME for a series of collaborative European projects. The \emph{SENSORIA project} (2005-2010) aimed to provide precise software engineering techniques for next-generation service-oriented overlay computers. The \emph{DIANA project} (2006-2010) involved large avionics companies to provide a distributed and equipment-independent environment for avionics applications compliant with the ARINC 653 standard. The E-Freight project (2010-2013) aimed to improve on European e-freight capabilities for combined transport routes. The SecureChange project (2009-2012) developed various security engineering techniques used for evolving software-intensive systems. Finally, the MONDO project (2013-2016) was concerned with the development of scalable modeling and model management techniques deployed over a cloud platform.
-
 I was involved in these projects starting both during the proposal writing as well as the actual execution phase. I was the scientific leader for different work packages, coordinated the development of project demonstrators, and altogether, I successfully collaborated with well over 100 researchers in Europe.
 
 \paragraph{Individual research grant applications: }
+I was also successful in grant applications where I was the sole PI. In particular, my ERC Starting Grant project (CERTIMOT: Design and Analysis Techniques for Certifiable Model Transformations) went to the final round of reviews at the European Commission with a supportive score of 7/8, but it became out of budget. Finally, it received partial funding from the Hungarian Research Agency and ran between 2010 and 2014. My application to the MTA Lendület research chair program is detailed below.
+
 
 \paragraph{Industrial funding: }
 I was the principal investigator of a two-year research project (TRANS-IMA) funded by Embraer, the large Brazilian airframer to develop innovative model-based avionic tools for their systems engineering process (total funding: 200,000 EUR). Previously, I was the three times recipient of the IBM Faculty Award offered by IBM TJ Watson Research Center (total amount of 36,000 USD). I was research coordinator for two collaborative projects with Nokia Research Centre (Budapest) on high-availability service platforms and model-driven development techniques (approx. 40,000 EUR).
@@ -314,9 +420,7 @@ I was the principal investigator of a two-year research project (TRANS-IMA) fund
 Since 2015, I successfully continued to secure substantial amount of research funding with a total amount of Canadian funding over 1.46 million CAD as PI or co-PI (own share of funding: 580,000 CAD), and additional own funding over 160 million HUF (equivalent of over 730,000 CAD) in Hungary. Except for my start-up grant offered by McGill University, all other grants were secured on a competitive basis. Further financial details of funding are listed in my CV.
 
 \paragraph{NSERC CRD: Digital Multidisciplinary Analysis and Design Optimization Platform (2018-2023): }
-In 2018, we started a multidisciplinary collaborative research and development (CRD) project co-funded by Siemens Canada and NSERC targeting a design platform for designing aeroderivative gas turbines. Together with my McGill graduate students, Maruthi Rangappa, Jasvir  Dhaliwal and Sebastian Pilarski, and in collaboration with leading Siemens managers (M. Staniszewski and F. Villeneuve) we work on innovative flexible software-as-a-service solutions to integrate various design, analysis and optimization tools driven by workflows. Moreover, we aim to develop a cloud-based solution to systematically store and query simulation results to allow fast iterations and a more agile design process. Moreover, we aim to exploit advance machine learning techniques to bring expertise gained from field data and simulated data directly to the mechanical engineers working on engine design. Initial results and a research roadmap has been proposed in \cite{mdeintelligence2019}. 
-
-I am a co-PI of the related NSERC project (PI: M. Kokkolaras, co-PI: H. Moustapha), and the only software engineering professor in the collaboration. I am main supervisor of the three MEng students working on the project. In 2018, I was an invited speaker at the Siemens Industrial Day at ETS (Montreal), and also gave a talk about the project to graduate students.
+We started a 5-year long multidisciplinary collaborative research and development (CRD) project co-funded by Siemens Canada and NSERC targeting a design platform for designing aeroderivative gas turbines. The total funding of the project is around 1.2 million CAD (with roughly 25\% is reserved to my own research). 
 
 %Furthermore, I gave two invited talks at the Siemens-ETS Industry 4.0 Day in Montreal in 2018. 
 
@@ -340,7 +444,7 @@ In 2017, I led the submission of a proposal as principal investigator for a thre
 \paragraph{MTA-BME Lendület Cyber-Physical Systems Research Group (2015-2020)}
 This prestigious and highly selective research chair program is run by the Hungarian Academy of Sciences, and each year a total of 12-15 researchers below the age of 45 are awarded nation-wide. In 2015, I was only the third ever recipient in the field of computer science. The project provided partial funding for 10 PhD students and 2 junior staff members at BME to do research on various challenges of cyber-physical systems.
 
-\paragraph{Further initiatives for research funding:}
-In addition, I was actively seeking further opportunities for research funding, being the PI for a proposal for the 
-MSSI (McGill Sustainability Systems Initiative) Ideas fund (Sustainity: A Knowledge Base for Sustainability Research) with G. Mussbacher (McGill) as co-PI, and being the co-PI in in an application submitted in the NSERC Collaborative Research and Training Experience (CREATE) program (TRANSMIT: Training program in continuous software migration to emerging technologies), and a co-PI in a proposal for the IDEaS Innovation for Defence and Security Program (Enhanced Human-Robot Collaboration with Wearable Technology) with G. Beltrame (Polytechnique), A.M. Cretu (Carleton), E. Coffey (Concordia) as PIs. Unfortunately, these initiatives did not receive funding in the respective competitions. 
+%\paragraph{Further initiatives for research funding:}
+%In addition, I was actively seeking further opportunities for research funding, being the PI for a proposal for the 
+%MSSI (McGill Sustainability Systems Initiative) Ideas fund (Sustainity: A Knowledge Base for Sustainability Research) with G. Mussbacher (McGill) as co-PI, and being the co-PI in in an application submitted in the NSERC Collaborative Research and Training Experience (CREATE) program (TRANSMIT: Training program in continuous software migration to emerging technologies), and a co-PI in a proposal for the IDEaS Innovation for Defence and Security Program (Enhanced Human-Robot Collaboration with Wearable Technology) with G. Beltrame (Polytechnique), A.M. Cretu (Carleton), E. Coffey (Concordia) as PIs. Unfortunately, these initiatives did not receive funding in the respective competitions. 
 
