@@ -14,6 +14,9 @@
 \newlist{yearlist}{description}{10}
 \setlist[yearlist]{itemindent=0pt,labelwidth=2cm,leftmargin=2cm,listparindent=0pt,labelsep=0pt,font=\normalfont}%,itemsep=3pt}
 
+%\newlist{commentlist}{itemize}{10}
+%\setlist[commentlist]{itemindent=0pt,labelwidth=0.5cm,leftmargin=0.5cm,listparindent=0pt,labelsep=0pt,font=\normalfont}
+%\setlist[commentlist]{itemindent=0pt,labelwidth=2cm,leftmargin=2cm,listparindent=0pt,labelsep=0pt,font=\normalfont}
 
 \usepackage{titlesec}
 \definecolor{gray75}{gray}{0.75}
@@ -57,10 +60,16 @@
 
 \addbibresource{bib/varrodan.bib}
 \addbibresource{bib/external.bib}
+%\addbibresource{bib/pcmember.bib}
 %\addglobalbib{bib/external.bib}
 
 %\assignrefcontextkeyws[labelprefix=C]{C}
 %\assignrefcontextkeyws[labelprefix=J]{J}
+
+\defbibheading{subbibliography}[\refname]{\subsection{#1}}
+\defbibheading{subbibintoc}[\refname]{\subsection{#1}}
+%\defbibheading{subbibliography}[\refname]{\subsection*{#1}}
+%\defbibheading{subbibintoc}[\refname]{\subsection*{#1}}
 
 \renewcommand*{\mkbibnamegiven}[1]{%
 %\ifpartannotation{family}{self}{\textbf{#1}}{#1}}
@@ -71,9 +80,11 @@
 %\ifpartannotation{family}{self}{\textbf{#1}}{#1}}}
 \ifpartannotation{family}{self}{\ifcategory{mcgill}{\mkbibbold{\underline{#1}}}{\textbf{#1}}}{#1}}}
 
+\renewcommand*{\bibfont}{\small}
+
 \usepackage{fancyhdr}
-\pagestyle{fancy}\lhead{Tenure Dossier} \rhead{August 2019}
-\chead{{\bf Dániel Varró}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+\pagestyle{fancy}\lhead{Dossier in Support of Application for Tenure} \rhead{August 2019}
+\rhead{Dániel Varró} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
 
 %\title{Teaching Portfolio}
 %\author{D\'aniel Varr\'o}
@@ -86,26 +97,38 @@
 \DeclareRefcontext{oref}{labelprefix=O}
 \DeclareRefcontext{eref}{labelprefix=E}
 \DeclareRefcontext{iref}{labelprefix=I}
+\DeclareRefcontext{pcref}{labelprefix=PC}
+\DeclareRefcontext{chref}{labelprefix=CH}
+\DeclareRefcontext{scref}{labelprefix=SC}
+\DeclareRefcontext{loref}{labelprefix=LO}
+\DeclareRefcontext{dsref}{labelprefix=DS}
+\DeclareRefcontext{jrref}{labelprefix=JR}
+\DeclareRefcontext{ijref}{labelprefix=IJ}
 %\DeclareRefcontext{extref}{labelprefix=X,sorting=none}
 \DeclareRefcontext{extref}{sorting=none}
 \DeclareBibliographyCategory{own}
 \DeclareBibliographyCategory{mcgill}
 
 \begin{document}
+{\footnotesize
+\tableofcontents
+}
 
 \input{tenure-cv}
-%\input{tenure-publication-list}
-%\input{tenure-personal-statement}
-%\input{tenure-teaching-statement}
-%\input{tenure-research-statement}
-%\input{tenure-service-statement}
-%\input{tenure-ecse321-evaluation}
+\input{tenure-publication-list}
+\input{tenure-personal-statement}
+\input{tenure-teaching-statement}
+\input{tenure-research-statement}
+\input{tenure-service-statement}
 
-%\appendix
 
-\newrefcontext{extref}
-\printbibliography[heading=bibliography,notcategory=own,title=External references]
-\lhead{References} 
+\appendix
+\input{tenure-sample-publications}
+\input{tenure-ecse321-evaluation}
+\input{tenure-tech-selfeval}
+
+%\newrefsection
+%\lhead{References} 
 
 \newpage
 

@@ -1,14 +1,16 @@
 \chapter{Research Portfolio}
+\label{sec:research-portfolio}
+\lfoot{Research Portfolio} 
 
-\begin{tcolorbox}[title=Summary of Excellence]
-My research primarily focuses on providing \emph{precise and scalable techniques} and \emph{software tools} used for engineering critical software-intensive systems with a recent focus on \emph{smart and safe cyber-physical systems} (CPS) deployed over decentralized, heterogeneous platforms. As the leader of an excellent research team with 15 PhD and 25+ Masters students I supervised or co-supervised, we received \emph{7x Best/Distinguished Paper Awards} at major peer-reviewed conferences of software engineering (3 of which since joining McGill). I also received \emph{two 10-year most influential papers} for past results achieved in my early career. My research papers received over 6700 citations yielding an h-index of 43. In the past 5 years, I was invited to deliver 6 keynote talks at international or national conferences or workshops, 10 talks at advanced schools, and 15+ talks at industrial events.
-
-\vspace{3pt}
-
-%\paragraph{A paragraph}
-Moreover, I have actively contributed to turn \emph{novel research results and prototype tools} first into \emph{industrial strength open source frameworks} then \emph{to innovative services and products} maintained by IncQuery Labs, a successful Hungarian company co-founded with my former graduate students and used by major international companies.
-% operating in the CPS domain.
-\end{tcolorbox}
+%\begin{tcolorbox}[title=Summary of Excellence]
+%My research primarily focuses on providing \emph{precise and scalable techniques} and \emph{software tools} used for engineering critical software-intensive systems with a recent focus on \emph{smart and safe cyber-physical systems} (CPS) deployed over decentralized, heterogeneous platforms. As the leader of an excellent research team with 15 PhD and 25+ Masters students I supervised or co-supervised, we received \emph{7x Best/Distinguished Paper Awards} at major peer-reviewed conferences of software engineering (3 of which since joining McGill). I also received \emph{two 10-year most influential papers} for past results achieved in my early career. My research papers received over 6700 citations yielding an h-index of 43. In the past 5 years, I was invited to deliver 6 keynote talks at international or national conferences or workshops, 10 talks at advanced schools, and 15+ talks at industrial events.
+%
+%\vspace{3pt}
+%
+%%\paragraph{A paragraph}
+%Moreover, I have actively contributed to turn \emph{novel research results and prototype tools} first into \emph{industrial strength open source frameworks} then \emph{to innovative services and products} maintained by IncQuery Labs, a successful Hungarian company co-founded with my former graduate students and used by major international companies.
+%% operating in the CPS domain.
+%\end{tcolorbox}
 
 \paragraph{Organization of research portfolio}
 
@@ -31,20 +33,23 @@ my five most significant research contributions in Stage 1 (i.e. up to 2014-15),
 
 \subsection{Context}
 
-In the past decade, model-based systems engineering (MBSE) has become a key technique for designing critical systems in application domains like avionics or automotive \cite{Broy2012,Whittle2014}. MBSE facilitates the systematic use of models on various levels of abstraction from an early phase of the development process in order to simultaneously \emph{increase productivity and quality} while \emph{reducing development costs} by avoiding costly re-design cycles compared to detecting the same problem by traditional testing. 
+In the past decade, model-based systems engineering (MBSE) has become a key technique for designing critical systems in application domains like avionics or automotive.%\cite{Broy2012,Whittle2014}. 
+MBSE facilitates the systematic use of models on various levels of abstraction from an early phase of the development process in order to simultaneously \emph{increase productivity and quality} while \emph{reducing development costs} by avoiding costly re-design cycles compared to detecting the same problem by traditional testing. 
 
 %System requirements and initial design 
-System design is captured by \emph{high-level engineering models} using modeling languages (like UML, SysML, AADL, Capella). These models enable to immediately check design rules and well-formedness constraints imposed by the underlying platform (such as AUTOSAR or ARINC653) to design flaws early. Early \emph{hidden formal analysis of system models} can be carried out by generating various mathematical models by automated model transformations (horizontal MTs) to detect and eliminate conceptual flaws and quality bottlenecks. Results of precise mathematical analysis are back-annotated to system models, thus systems engineers can observe and correct these problems using a formalism familiar to them. 
+System design is captured by \emph{high-level engineering models} using modeling languages (like UML, SysML, AADL, Capella). These models enable to immediately check design rules and well-formedness constraints imposed by the underlying platform (such as AUTOSAR or ARINC653) to design flaws early. Early \emph{hidden formal analysis of system models} can be carried out by generating various mathematical models by automated model transformations (MTs) to detect and eliminate conceptual flaws and quality bottlenecks. Results of precise mathematical analysis are back-annotated to system models, thus systems engineers can observe and correct these problems using a formalism familiar to them. 
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=.65\textwidth]{figures/mbse}
-\caption{Models transformations in model-based systems engineering}
-\label{fig:mbse}
-\end{figure}
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=.65\textwidth]{figures/mbse}
+%\caption{Models transformations in model-based systems engineering}
+%\label{fig:mbse}
+%\end{figure}
 
 
-Automated code generators (also called vertical MTs) improve productivity by synthesizing provenly correct source code of a safety-critical application from a validated model \cite{Sturmer-TSE2007}. In addition to source code generation, MBSE tools can synthesize other design artifacts (such as configuration tables, fault trees, test cases, documentation) and provide support for end-to-end traceability \cite{Aizenbud-IBMSystems-2006}. MBSE changes the traditional V-model of systems engineering into a Y-model where certain certification artifacts are synthesized automatically from models of proven quality used at different levels of abstraction.
+Automated code generators (also called vertical MTs) improve productivity by synthesizing provenly correct source code of a safety-critical application from a validated model.% \cite{Sturmer-TSE2007}. 
+In addition to source code generation, MBSE tools can synthesize other design artifacts (such as configuration tables, fault trees, test cases, documentation) and provide support for end-to-end traceability.% \cite{Aizenbud-IBMSystems-2006}. 
+MBSE changes the traditional V-model of systems engineering into a Y-model where certain certification artifacts are synthesized automatically from models of proven quality used at different levels of abstraction.
 
 %\subsection{Summary}
 In Stage 1, my research was characterized by (1) proposing novel, foundational concepts, (2) developing innovative and scalable techniques, (3) architecting and maintaining cutting edge prototype tools based on solid foundations, (4) continuously benchmarking and empirically evaluating these tools, and (5) using these results at design time in a wide range of applications in tools used for engineering critical systems (like avionics and automotive). 
@@ -123,9 +128,12 @@ I was the main supervisor of all the student contributors listed above, and cons
 \subsection{High-level overview of the research program}
 
 \paragraph{Motivation.}
- A smart\& safe cyber-physical system (CPS) \autoref{fig:smart-safe-cps} is a software-intensive decentralized system that autonomously perceives its operational context and adapts to changes over an open, heterogeneous and distributed platform with a massive number of nodes, dynamically acquires available resources and aggregates services to make real-time decisions, and resiliently provides critical services in a trustworthy way. Several challenges of such systems have been identified in \cite{Sztipanovits2012,Lee2014,Krupitzer2015,Cengarle2013,CPSoS2015}. 
+ A smart\& safe cyber-physical system (CPS) \autoref{fig:smart-safe-cps} is a software-intensive decentralized system that autonomously perceives its operational context and adapts to changes over an open, heterogeneous and distributed platform with a massive number of nodes, dynamically acquires available resources and aggregates services to make real-time decisions, and resiliently provides critical services in a trustworthy way. 
+%Several challenges of such systems have been identified in \cite{Sztipanovits2012,Lee2014,Krupitzer2015,Cengarle2013,CPSoS2015}. 
 
-In an open, interconnected and decentralized CPS, the components, the services, the underling execution platform and the environment may continuously evolve and change, thus distinction between design-time and run-time is blurred \cite{Baresi2010}. First, runtime information on services, platforms and deployment can be captured by runtime models \cite{Blair2009,Szvetits2013} and operations on models will have direct effects on the running system. Then dynamic changes in requirements, services, resources, deployed configurations and reconfiguration rules need to be handled. Consequently, optimization and exploration will be pushed to runtime to guarantee that new deployment configurations do not jeopardize safety.
+In an open, interconnected and decentralized CPS, the components, the services, the underling execution platform and the environment may continuously evolve and change, thus distinction between design-time and run-time is blurred. %\cite{Baresi2010}. 
+First, runtime information on services, platforms and deployment can be captured by runtime models %\cite{Blair2009,Szvetits2013} 
+and operations on models will have direct effects on the running system. Then dynamic changes in requirements, services, resources, deployed configurations and reconfiguration rules need to be handled. Consequently, optimization and exploration will be pushed to runtime to guarantee that new deployment configurations do not jeopardize safety.
 
 Recent advances in machine learning drives innovation in many sectors, e.g. to decrease energy consumption in smart buildings, to better adapt to current demands in smart factories or to prevent accidents in connected cars. But one needs to \emph{guarantee the trustworthiness of smart systems in a continuously evolving open environment}. It is a major challenge today for our society to prevent major future failures of such autonomous decentralized systems.
 
@@ -174,8 +182,13 @@ Funding &  NSERC DG (CA), MTA-BME Lendület (HU), NSERC Engage (under review) \\
 \end{table}
 
 \paragraph{Motivation.} 
-Since upfront formal verification is typically infeasible for smart CPSs, runtime monitoring is a common practice to continuously detect the violation of (safety) properties at runtime. Runtime monitoring has been addressed by runtime verification (RV) techniques \cite{Leucker2009,Mitsch2014} which provide formal precision, but offer a low-level specification language (with simple atomic predicates to capture information about the system). Recent RV approaches \cite{Havelund2015} started to exploit rule-based techniques over a richer (relational or graph-based) information model. 
-Runtime models (\cite{BlairBF09,Szvetits2013}) provide a rich knowledge representation to capture the runtime operational state and context of a smart CPS as typed and attributed graphs to serve as a unifying semantic basis for runtime assurance of self-adaptive systems (SAS) in \cite{Cheng2014,Vogel2014}. While graph models are widely used internally in various design tools for CPS (e.g. Capella, Artop), real-time CPSs dominantly use low-level data structures with static (i.e. compile-time) memory allocation to ensure resource constraints such as memory limits or deadlines, which is a major limitation.
+Since upfront formal verification is typically infeasible for smart CPSs, runtime monitoring is a common practice to continuously detect the violation of (safety) properties at runtime. Runtime monitoring has been addressed by runtime verification (RV) techniques %\cite{Leucker2009,Mitsch2014} 
+which provide formal precision, but offer a low-level specification language (with simple atomic predicates to capture information about the system). 
+%Recent RV approaches \cite{Havelund2015} started to exploit rule-based techniques over a richer (relational or graph-based) information model. 
+Runtime models %\cite{BlairBF09,Szvetits2013} 
+provide a rich knowledge representation to capture the runtime operational state and context of a smart CPS as typed and attributed graphs to serve as a unifying semantic basis for runtime assurance of self-adaptive systems (SAS).
+%in \cite{Cheng2014,Vogel2014}. 
+While graph models are widely used internally in various design tools for CPS (e.g. Capella, Artop), real-time CPSs dominantly use low-level data structures with static (i.e. compile-time) memory allocation to ensure resource constraints such as memory limits or deadlines, which is a major limitation.
 % Unfortunately, \emph{such static data models are unable to capture dynamically evolving contextual information where there is no a priori upper bound on relevant contextual objects} (e.g. many pedestrians may be in contextual range of a self-driving car), which is a major limitation. 
 
 \paragraph{Results.}
@@ -216,9 +229,14 @@ Funding &  NSERC DG (CA), MTA-BME Lendület (HU) \\ %\midrule
 Graphs are key abstractions in science and engineering. They may represent linked data in graph databases, complex designs of cyber-physical systems or critical contextual situations for autonomous systems. Synthetic graph generators are essential when the use of real graph models is restricted (to respect privacy regulations or intellectual properties of companies) or impractical (to find corner-cases for safety assurance). I initiated the CORE-DISC \emph{long-term research program program} \cite{fmhe2018} to develop a next generation of synthetic graph generator techniques and tools that are customizable to different application domains to derive graph models which are simultaneously \emph{CO: consistent} (graphs shall satisfy various structural logic constraints of the domain), \emph{RE: realistic} (synthetic graphs shall resemble real graphs of a given domain), \emph{DI: diverse} (any pair of graphs shall be structurally distant from each other) and \emph{SC: scalable} (the graph generator shall be able to derive large graph models). Such synthetic graphs are intended to be used as test cases in tool qualification process prescribed by safety standards.% (like DO-330).
 
 \paragraph{Results.} 
-As consistency appeared to be the most difficult property to achieve, our initial investigations \cite{fase2016-solver,sosym2017-dsl} aimed to derive consistent graph models with the use of existing logic solvers like Alloy with Kodkod (from MIT) \cite{Torlak2007} or Z3 (from Microsoft Research) \cite{Moura-tacas2008}, but none of these attempts were able to scale by failing generate models with over 100 graph nodes. Therefore, we developed a novel \emph{consistent graph solver} \cite{icse2018-solver,icse2019-tool}(with my students, O. Semeráth, A. Nagy, G. Szárnyas, A. Babikian and S. Pilarski) for automatically generating consistent graph models by implementing a novel refinement calculus over partial models \cite{fmhe2018} and using an approximation technique based on constraint rewriting \cite{icmt2017}. Our consistent graph solver \cite{icse2018-solver,icse2019-tool} scales 1-2 orders of magnitude better than competitors that use background logic solvers and its scalability is comparable to search-based techniques \cite{Soltana2017} while uniquely providing both consistency and completeness guarantees. We successfully applied the model generator for incremental backward propagation of view models \cite{MODELS2016-bx} as well as for incremental view model synchronization \cite{models2018}.
+As consistency appeared to be the most difficult property to achieve, our initial investigations \cite{fase2016-solver,sosym2017-dsl} aimed to derive consistent graph models with the use of existing logic solvers like Alloy with Kodkod (from MIT) 
+%\cite{Torlak2007} 
+or Z3 (from Microsoft Research) %\cite{Moura-tacas2008}, 
+but none of these attempts were able to scale by failing generate models with over 100 graph nodes. Therefore, we developed a novel \emph{consistent graph solver} \cite{icse2018-solver,icse2019-tool}(with my students, O. Semeráth, A. Nagy, G. Szárnyas, A. Babikian and S. Pilarski) for automatically generating consistent graph models by implementing a novel refinement calculus over partial models \cite{fmhe2018} and using an approximation technique based on constraint rewriting \cite{icmt2017}. Our consistent graph solver \cite{icse2018-solver,icse2019-tool} scales 1-2 orders of magnitude better than competitors that use background logic solvers and its scalability is comparable to search-based techniques %\cite{Soltana2017} 
+while uniquely providing both consistency and completeness guarantees. We successfully applied the model generator for incremental backward propagation of view models \cite{MODELS2016-bx} as well as for incremental view model synchronization \cite{models2018}.
 
-Moreover, we provided the first characterization of \emph{realistic models} in \cite{MODELS2016-metrics,fmhe2018} by adapting various graph metrics from network science and evaluating them on graph models taken from six different domains of software and systems engineering. By adapting graph shapes \cite{Rensink}, we proposed various \emph{model diversity metrics} \cite{fase2018-diverse,sttt-2019-div} by which generalize and subsumes several existing coverage metrics used for testing of model transformations. We extended our model generator and showed that it derives more diverse models than its direct competitors \cite{fase2018-diverse,fmhe2018,sttt-2019-div}. 
+Moreover, we provided the first characterization of \emph{realistic models} in \cite{MODELS2016-metrics,fmhe2018} by adapting various graph metrics from network science and evaluating them on graph models taken from six different domains of software and systems engineering. By adapting graph shapes, %\cite{Rensink}, 
+we proposed various \emph{model diversity metrics} \cite{fase2018-diverse,sttt-2019-div} by which generalize and subsumes several existing coverage metrics used for testing of model transformations. We extended our model generator and showed that it derives more diverse models than its direct competitors \cite{fase2018-diverse,fmhe2018,sttt-2019-div}. 
 
 %aimed  Generating consistent After a series of initial results , we rea attempts with negative scalabil results 
 
@@ -307,7 +325,7 @@ I am a co-PI of the NSERC project (PI: M. Kokkolaras - McGill, co-PI: H. Moustap
 \paragraph{Results.} 
 Naturally, I also continued previous research lines started in Stage 1 of my career. Below I summarize and report results where major progress has been made after I joined McGill University. 
 
-\begin{itemize}
+\begin{itemize}[leftmargin=0.5cm]
 \item
 \textbf{Benchmarks for incremental graph queries:}
 With key contributions from G. Szárnyas (my PhD student), we prepared a journal paper \cite{sosym2017-tb} to extend the Train Benchmark with a cross-technology comparison of graph query techniques with over 10 tools (including relational databases, graph databases, Eclipse-based modeling tools, rule-based expert systems, etc.). Thanks to the free availability of its source code repository, the Train Benchmark has been actively used by four independent research groups within the model-driven engineering community.
@@ -333,7 +351,7 @@ With V. Molnár, Á. Hajdu (graduate research trainees at McGill), B. Graics, A.
 
 While as a senior researcher, my main mission is to supervise graduate students and help them mature as independent researchers, I still continue participating in international collaborations that typically result in joint publications. Below I summarize a few joint initiatives from the past 3-4 years. 
 
-\begin{itemize}
+\begin{itemize}[leftmargin=0.5cm]
 \item \textbf{Server-side incremental queries } 
 I actively collaborated with researchers and software engineers of IncQuery Labs Ltd. from the inception phase to develop an innovative, server-side product called IncQueryServer for TeamWork Cloud. The product exploits advanced graph query techniques to provide cloud-based server-side validation services over large system models captured in the standard SysML language. The product is  provided as an add-on to a popular cloud-based model repository product of NoMagic/Dassault Systems. We published a joint tool demonstration paper \cite{models2018-tool}, which  received a \textbf{Best Tool Paper Award} at the MODELS 2018 conference.
 
@@ -448,3 +466,5 @@ This prestigious and highly selective research chair program is run by the Hunga
 %In addition, I was actively seeking further opportunities for research funding, being the PI for a proposal for the 
 %MSSI (McGill Sustainability Systems Initiative) Ideas fund (Sustainity: A Knowledge Base for Sustainability Research) with G. Mussbacher (McGill) as co-PI, and being the co-PI in in an application submitted in the NSERC Collaborative Research and Training Experience (CREATE) program (TRANSMIT: Training program in continuous software migration to emerging technologies), and a co-PI in a proposal for the IDEaS Innovation for Defence and Security Program (Enhanced Human-Robot Collaboration with Wearable Technology) with G. Beltrame (Polytechnique), A.M. Cretu (Carleton), E. Coffey (Concordia) as PIs. Unfortunately, these initiatives did not receive funding in the respective competitions. 
 
+%\newrefcontext{extref}
+%\printbibliography[heading=subbibliography,notcategory=own,title=External references]
