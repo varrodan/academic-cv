@@ -9,8 +9,17 @@
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage{color}
-\usepackage{enumitem}
 
+%\usepackage[tocflat]{tocstyle}
+\usepackage[tocgraduated]{tocstyle}
+%\usetocstyle{standard}
+%\usetocstyle{KOMAlike}
+\usetocstyle{classic}
+%\usetocstyle{allwithdot}
+
+\renewcommand*\contentsname{Table of Contents}
+
+\usepackage{enumitem}
 \newlist{yearlist}{description}{10}
 \setlist[yearlist]{itemindent=0pt,labelwidth=2cm,leftmargin=2cm,listparindent=0pt,labelsep=0pt,font=\normalfont}%,itemsep=3pt}
 
@@ -110,7 +119,43 @@
 \DeclareBibliographyCategory{mcgill}
 
 \begin{document}
-{\footnotesize
+
+\begin{titlepage}
+\thispagestyle{empty}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\includegraphics[width=.5\textwidth]{figures/McGill-logo.png}\\[0.5cm] 
+
+\textsc{\LARGE Department of Electrical and Computer Engineering}\\[3cm] 
+%\textsc{\Large Major Heading}\\[0.5cm] % Major heading such as course name
+%\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Dossier in Support of Application for Tenure}\\[0.4cm] % Title of your document
+\HRule \\[4cm]
+
+%\large \emph{by}\\
+{\bfseries\LARGE Dániel \textsc{Varró}}\\[8cm] % Your name
+
+%\flushleft
+%\large
+%Department of Electrical and Computer Engineering \\
+%3480 Rue University, Montréal, Québec, \\ 
+%H3A 0E9, Canada 
+%\center 
+
+{\Large September 2019}\\[2cm] 
+
+\vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+
+{%\footnotesize
+\small
 \tableofcontents
 }
 
